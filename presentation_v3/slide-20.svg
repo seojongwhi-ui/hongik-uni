@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">05 · 기대 기여</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">학술·인문학·디자인 관점의 기여</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">아래 항목은 연구 완료 후 기대하는 결과다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">20</text>
+<text x="88" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01</text>
+<text x="88" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">학술적 기여</text>
+<rect x="88" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">운전 분노와 동승자 효과를</text>
+<text x="88" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">연결하고, 조절 동기로서</text>
+<text x="88" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">안전 책임감을 탐색한다.</text>
+<text x="581.3333333333333" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02</text>
+<text x="581.3333333333333" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">인문학적 기여</text>
+<rect x="581.3333333333333" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="581.3333333333333" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">자동차 내부를 감정과</text>
+<text x="581.3333333333333" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">타인에 대한 책임이</text>
+<text x="581.3333333333333" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">교차하는 공간으로 읽는다.</text>
+<text x="1074.6666666666665" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03</text>
+<text x="1074.6666666666665" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">디자인 기여</text>
+<rect x="1074.6666666666665" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="1074.6666666666665" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">자기조절을 돕는 차량 AI의</text>
+<text x="1074.6666666666665" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">개입 방식과 강도를</text>
+<text x="1074.6666666666665" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">HMI 설계 원칙으로 제안한다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">최종 산출물</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자 경험 분석 · AI 프로토타입 · 감정 조절 지원 설계 가이드</text></svg>

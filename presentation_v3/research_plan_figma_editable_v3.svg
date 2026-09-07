@@ -1,0 +1,659 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3280" height="12660" viewBox="0 0 3280 12660"><g id="slide-01" transform="translate(0,0)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">RESEARCH PROPOSAL · 2026.09</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자 존재와 운전자 분노 조절</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">홍익대학교 일반대학원 산업디자인과 · 서종휘 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">01</text>
+<text x="88" y="375.94" font-family="Noto Sans KR" font-size="66" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">차량 내 AI 인터페이스 설계 연구</text>
+<text x="92" y="498.06" font-family="Noto Sans KR" font-size="34" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">타자의 존재, 안전 책임감, 감정 조절 경험을 중심으로</text>
+<rect x="88" y="577" width="80" height="5" fill="#087E83"/>
+<text x="88" y="662.51" font-family="Noto Sans KR" font-size="39" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">함께 탄 사람을 보호하려는 책임감은</text>
+<text x="88" y="720.23" font-family="Noto Sans KR" font-size="39" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">운전자의 감정 조절과 어떻게 연결되는가?</text></g>
+<g id="slide-02" transform="translate(1680,0)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01 · 연구의 출발점</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">연구의 핵심 질문</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동승자와 함께 있을 때 나타나는 감정 조절의 이유에 주목한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">02</text>
+<text x="88" y="372.13" font-family="Noto Sans KR" font-size="57" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">왜 동승자가 있으면</text>
+<text x="88" y="456.49" font-family="Noto Sans KR" font-size="57" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">화를 표현하는 방식이 달라질까?</text>
+<text x="88" y="568.15" font-family="Noto Sans KR" font-size="35" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">예비조사에서는 ‘동승자의 안전에 대한 책임감’이</text>
+<text x="88" y="619.9499999999999" font-family="Noto Sans KR" font-size="35" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">가장 많이 선택된 영향 이유였다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">연구 방향</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">이 경험을 차량 AI의 자기조절 지원 방식으로 연결한다.</text></g>
+<g id="slide-03" transform="translate(0,980)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01 · 배경</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">자동차는 감정과 관계가 함께 놓이는 공간</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">공적 도로, 사적 실내, 동승자와의 관계라는 세 층위로 이해한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">03</text>
+<text x="88" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01</text>
+<text x="88" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">공적 도로</text>
+<rect x="88" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">끼어들기, 경적, 상향등 등</text>
+<text x="88" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">타인의 행동과 접촉하며</text>
+<text x="88" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">감정적 충돌을 경험한다.</text>
+<text x="581.3333333333333" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02</text>
+<text x="581.3333333333333" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">사적 실내</text>
+<rect x="581.3333333333333" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="581.3333333333333" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">분노가 혼잣말과 욕설 등</text>
+<text x="581.3333333333333" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">차량 내부의 표현으로</text>
+<text x="581.3333333333333" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">나타날 수 있다.</text>
+<text x="1074.6666666666665" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03</text>
+<text x="1074.6666666666665" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">관계적 공간</text>
+<rect x="1074.6666666666665" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="1074.6666666666665" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 탑승하면</text>
+<text x="1074.6666666666665" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">자신의 감정과 함께</text>
+<text x="1074.6666666666665" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">타인의 안전을 고려한다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">해석의 초점</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">차량 내부를 감정과 책임이 교차하는 생활공간으로 본다.</text></g>
+<g id="slide-04" transform="translate(1680,980)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01 · 문제와 목적</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">이 연구가 해결하려는 문제</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">운전자의 감정 경험을 차량 내 AI 인터페이스 설계로 연결한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">04</text>
+<text x="88" y="325.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">관찰할 현상</text>
+<text x="422" y="325.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 있을 때 감정 표현과 행동을 조절하는 경험</text>
+<rect x="88" y="373" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="416.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">설명할 이유</text>
+<text x="422" y="416.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">시선·체면 의식과 안전 책임감이 각각 작동하는 방식</text>
+<rect x="88" y="464" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="507.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">설계할 대상</text>
+<text x="422" y="507.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">운전자가 스스로 감정을 조절하도록 돕는 차량 AI</text>
+<rect x="88" y="555" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="598.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">확인할 효과</text>
+<text x="422" y="598.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">책임감 환기, 분노 경험, 방해감, 신뢰와 수용성</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">연구 목적</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자 경험의 해석을 AI 인터랙션 설계 원칙으로 구체화한다.</text></g>
+<g id="slide-05" transform="translate(0,1960)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01 · 연구 문제</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">관찰에서 해석을 거쳐 설계로</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서의 다섯 가지 질문을 순서대로 연결한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">05</text>
+<text x="88" y="312.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">RQ 1 · 자극</text>
+<text x="422" y="312.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">어떤 도로 상황에서 분노와 불쾌감이 강하게 나타나는가?</text>
+<rect x="88" y="368" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="411.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">RQ 2 · 표현</text>
+<text x="422" y="411.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">분노는 혼잣말, 욕설, 경적, 공격적 운전으로 어떻게 표출되는가?</text>
+<rect x="88" y="467" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="510.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">RQ 3 · 동승자</text>
+<text x="422" y="510.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자의 존재와 유형은 감정 표현 및 행동 조절과 어떻게 연결되는가?</text>
+<rect x="88" y="566" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="609.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">RQ 4 · 동기</text>
+<text x="422" y="609.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">안전 책임감과 시선·체면 의식은 조절 이유로 어떻게 나타나는가?</text>
+<rect x="88" y="665" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="708.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">RQ 5 · 설계</text>
+<text x="422" y="708.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자 경험을 책임감과 자기조절을 환기하는 AI로 구현할 수 있는가?</text></g>
+<g id="slide-06" transform="translate(1680,1960)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02 · 이론적 배경</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">선행연구와 본 연구의 연결</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">기존 연구계획서에 수록된 문헌을 역할에 따라 정리했다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">06</text>
+<text x="88" y="314.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">운전 분노 측정</text>
+<text x="422" y="314.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">DAS · Deffenbacher et al.(1994) / DAX · Deffenbacher et al.(2002)</text>
+<text x="422" y="355.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">한국 운전자 맥락 · 신용균 외(2009)</text>
+<rect x="88" y="395" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="438.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">감정 조절</text>
+<text x="422" y="438.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Gross(1998) / Harris &amp; Nass(2011)</text>
+<text x="422" y="479.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">상황의 의미를 재해석하는 감정 조절 관점</text>
+<rect x="88" y="519" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="562.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">동승자 효과</text>
+<text x="422" y="562.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Baxter et al.(1990) / Vollrath et al.(2002) / Lee &amp; Abdel-Aty(2008)</text>
+<text x="422" y="603.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승 조건과 운전 행동의 관계</text>
+<rect x="88" y="643" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="686.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">차량 에이전트</text>
+<text x="422" y="686.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Jeon et al.(2015) / Nass &amp; Moon(2000)</text>
+<text x="422" y="727.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">차량 내 상호작용과 기술에 대한 사회적 반응</text></g>
+<g id="slide-07" transform="translate(0,2940)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02 · 인문학적 해석</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자를 어떻게 이해할 것인가</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">‘타자와 책임’은 본 연구에서 탐색할 해석적 관점이다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">07</text>
+<text x="88" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01</text>
+<text x="88" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">시선의 타자</text>
+<rect x="88" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">누군가 나를 보고 있다는</text>
+<text x="88" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">인식이 평가, 체면과</text>
+<text x="88" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">연결되는 경험</text>
+<text x="581.3333333333333" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02</text>
+<text x="581.3333333333333" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">관계의 타자</text>
+<rect x="581.3333333333333" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="581.3333333333333" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">혼자 있던 실내가</text>
+<text x="581.3333333333333" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">누군가와 함께하는</text>
+<text x="581.3333333333333" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">공간으로 바뀌는 경험</text>
+<text x="1074.6666666666665" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03</text>
+<text x="1074.6666666666665" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">책임의 타자</text>
+<rect x="1074.6666666666665" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="1074.6666666666665" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">함께 탄 사람의 안전을</text>
+<text x="1074.6666666666665" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">내가 책임져야 한다고</text>
+<text x="1074.6666666666665" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">느끼는 경험</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">후속 과제</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">이 관점을 뒷받침할 인문학 문헌과 실제 경험 자료를 보완한다.</text></g>
+<g id="slide-08" transform="translate(1680,2940)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03 · 예비조사</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">예비 설문조사 개요</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">운전 상황에서의 감정 및 행동 변화 조사 · 유효 응답 33명</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">08</text>
+<text x="88" y="369.76" font-family="Noto Sans KR" font-size="64" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">33명</text>
+<text x="88" y="452.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">유효 응답</text>
+<text x="454" y="369.76" font-family="Noto Sans KR" font-size="64" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">69.7%</text>
+<text x="454" y="452.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">20대 비중</text>
+<text x="820" y="369.76" font-family="Noto Sans KR" font-size="64" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">90.9%</text>
+<text x="820" y="452.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동승 빈도: 가끔~항상</text>
+<text x="1186" y="369.76" font-family="Noto Sans KR" font-size="64" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">42.4%</text>
+<text x="1186" y="452.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">주요 목적: 출퇴근</text>
+<rect x="88" y="530" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="583.61" font-family="Noto Sans KR" font-size="29" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">여성 18명 · 남성 15명  |  최근 6개월 이내 운전 경험이 있는 성인</text>
+<text x="88" y="661.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">DAS·K-DAS 참고 재구성 문항 / 5점 척도 / 유형·이유 선택 / 정성 경험</text>
+<text x="88" y="765.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">원척도 전체를 그대로 적용한 검사가 아니며, 리워드용 개인정보는 분석과 분리한다.</text></g>
+<g id="slide-09" transform="translate(0,3920)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03 · 결과 1</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">가장 높은 분노 유발 상황은 적대적 표현</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">상황별 평균 · 5점 척도</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33 · 기술통계</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">09</text>
+<text x="703" y="287.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">0</text>
+<text x="1026" y="287.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">2.5</text>
+<text x="1349" y="287.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">5</text>
+<text x="88" y="336.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">적대적 표현: 경적·상향등·손짓</text>
+<rect x="698" y="317" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="317" width="501.296" height="23" fill="#087E83"/>
+<text x="1512" y="336.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="end" letter-spacing="0">3.88</text>
+<text x="88" y="396.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">갑작스러운 끼어들기</text>
+<rect x="698" y="377" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="377" width="437.988" height="23" fill="#A8B7B9"/>
+<text x="1512" y="396.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.39</text>
+<text x="88" y="456.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">타인의 교통법규 위반</text>
+<rect x="698" y="437" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="437" width="434.11199999999997" height="23" fill="#A8B7B9"/>
+<text x="1512" y="456.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.36</text>
+<text x="88" y="516.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">교통 체증·이동시간 지연</text>
+<rect x="698" y="497" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="497" width="422.48400000000004" height="23" fill="#A8B7B9"/>
+<text x="1512" y="516.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.27</text>
+<text x="88" y="576.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">뒤차의 안전거리 미확보</text>
+<rect x="698" y="557" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="557" width="403.104" height="23" fill="#A8B7B9"/>
+<text x="1512" y="576.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.12</text>
+<text x="88" y="636.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">앞차의 지나친 서행</text>
+<rect x="698" y="617" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="617" width="391.476" height="23" fill="#A8B7B9"/>
+<text x="1512" y="636.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.03</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">관찰</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">응답 평균은 적대적 표현에서 가장 높았다.</text></g>
+<g id="slide-10" transform="translate(1680,3920)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03 · 결과 2</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">분노 표현은 혼잣말과 욕설에서 높았다</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">표현 방식별 평균 · 5점 척도</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33 · 기술통계</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">10</text>
+<text x="703" y="300.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">0</text>
+<text x="1026" y="300.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">2.5</text>
+<text x="1349" y="300.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">5</text>
+<text x="88" y="349.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">혼잣말</text>
+<rect x="698" y="330" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="330" width="441.86400000000003" height="23" fill="#087E83"/>
+<text x="1512" y="349.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="end" letter-spacing="0">3.42</text>
+<text x="88" y="417.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">욕설</text>
+<rect x="698" y="398" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="398" width="337.212" height="23" fill="#A8B7B9"/>
+<text x="1512" y="417.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">2.61</text>
+<text x="88" y="485.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">경적 사용</text>
+<rect x="698" y="466" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="466" width="277.78" height="23" fill="#A8B7B9"/>
+<text x="1512" y="485.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">2.15</text>
+<text x="88" y="553.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">공격적 운전 경험</text>
+<rect x="698" y="534" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="534" width="254.52399999999997" height="23" fill="#A8B7B9"/>
+<text x="1512" y="553.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">1.97</text>
+<text x="88" y="621.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">보복 행동</text>
+<rect x="698" y="602" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="602" width="208.01200000000003" height="23" fill="#A8B7B9"/>
+<text x="1512" y="621.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">1.61</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">설계 단서</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">외부 행동과 함께 차량 내부의 감정 표현 경험을 살펴본다.</text></g>
+<g id="slide-11" transform="translate(0,4900)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03 · 결과 3</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승 시 감정 표현과 행동을 조절했다고 응답</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동승자 존재에 따른 변화 · 5점 척도</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33 · 자기보고 응답</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">11</text>
+<text x="703" y="300.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">0</text>
+<text x="1026" y="300.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">2.5</text>
+<text x="1349" y="300.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">5</text>
+<text x="88" y="349.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">감정 표현 조절</text>
+<rect x="698" y="330" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="330" width="524.5519999999999" height="23" fill="#087E83"/>
+<text x="1512" y="349.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="end" letter-spacing="0">4.06</text>
+<text x="88" y="417.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">화나는 상황에서 행동 참음</text>
+<rect x="698" y="398" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="398" width="520.676" height="23" fill="#A8B7B9"/>
+<text x="1512" y="417.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">4.03</text>
+<text x="88" y="485.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">운전 행동 변화 지각</text>
+<rect x="698" y="466" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="466" width="454.784" height="23" fill="#A8B7B9"/>
+<text x="1512" y="485.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.52</text>
+<text x="88" y="553.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자 반응에 따른 행동 변화</text>
+<rect x="698" y="534" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="534" width="360.46799999999996" height="23" fill="#A8B7B9"/>
+<text x="1512" y="553.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">2.79</text>
+<text x="88" y="621.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">오히려 감정 표현 증가</text>
+<rect x="698" y="602" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="602" width="254.52399999999997" height="23" fill="#A8B7B9"/>
+<text x="1512" y="621.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">1.97</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">해석 범위</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">표현·행동의 조절 응답만으로 분노 자체의 감소를 단정하지 않는다.</text></g>
+<g id="slide-12" transform="translate(1680,4900)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03 · 핵심 결과</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">가장 많이 선택한 이유는 안전 책임감</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">처음 예상했던 시선 의식과 실제 응답을 비교한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · 영향 이유 단일 선택 · N=33</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">12</text>
+<text x="88" y="347.42" font-family="Noto Sans KR" font-size="38" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자의 안전에 대한 책임감</text>
+<text x="88" y="525.98" font-family="Noto Sans KR" font-size="122" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">63.6%</text>
+<text x="96" y="629.79" font-family="Noto Sans KR" font-size="31" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">21명 / 33명</text>
+<rect x="1040" y="308" width="2" height="354" fill="#DAE1E2"/>
+<text x="1092" y="341.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">시선·체면 관련 응답</text>
+<text x="1092" y="425.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">좋은 모습을 보이고 싶음</text>
+<text x="1092" y="466.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">9.1% · 3명</text>
+<text x="1092" y="573.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">다른 사람이 보고 있음</text>
+<text x="1092" y="614.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">6.1% · 2명</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">연구의 초점</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자를 보호하려는 마음이 감정 조절과 연결되는 과정을 탐색한다.</text></g>
+<g id="slide-13" transform="translate(0,5880)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03 · 결과 4</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 영향을 미치는 이유 전체</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">가장 큰 이유를 선택한 응답 비율 · 합계는 반올림으로 100%와 다를 수 있음</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33 · 단일 선택</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">13</text>
+<text x="703" y="287.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">0</text>
+<text x="1026" y="287.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">50</text>
+<text x="1349" y="287.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">100</text>
+<text x="88" y="336.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">안전 책임감 · 21명</text>
+<rect x="698" y="317" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="317" width="410.856" height="23" fill="#087E83"/>
+<text x="1512" y="336.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="end" letter-spacing="0">63.6%</text>
+<text x="88" y="396.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">영향을 거의 받지 않음 · 4명</text>
+<rect x="698" y="377" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="377" width="78.166" height="23" fill="#A8B7B9"/>
+<text x="1512" y="396.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">12.1%</text>
+<text x="88" y="456.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">좋은 모습을 보이고 싶음 · 3명</text>
+<rect x="698" y="437" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="437" width="58.785999999999994" height="23" fill="#A8B7B9"/>
+<text x="1512" y="456.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">9.1%</text>
+<text x="88" y="516.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">다른 사람이 보고 있음 · 2명</text>
+<rect x="698" y="497" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="497" width="39.406" height="23" fill="#A8B7B9"/>
+<text x="1512" y="516.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">6.1%</text>
+<text x="88" y="576.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">함께 감정을 공유함 · 2명</text>
+<rect x="698" y="557" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="557" width="39.406" height="23" fill="#A8B7B9"/>
+<text x="1512" y="576.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">6.1%</text>
+<text x="88" y="636.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자의 반응이나 말 · 1명</text>
+<rect x="698" y="617" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="617" width="19.38" height="23" fill="#A8B7B9"/>
+<text x="1512" y="636.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.0%</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">확인할 점</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">책임감은 가장 빈번한 응답이며, 인과적 기제는 후속 연구 과제다.</text></g>
+<g id="slide-14" transform="translate(1680,5880)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03 · 결과 5</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">가장 영향력이 큰 동승자 유형</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">가족이 가장 많았고, 유형 차이를 느끼지 않는 응답도 나타났다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33 · 단일 선택</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">14</text>
+<text x="703" y="287.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">0</text>
+<text x="1026" y="287.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">50</text>
+<text x="1349" y="287.71" font-family="Noto Sans KR" font-size="19" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">100</text>
+<text x="88" y="336.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">가족 · 11명</text>
+<rect x="698" y="317" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="317" width="215.118" height="23" fill="#087E83"/>
+<text x="1512" y="336.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="end" letter-spacing="0">33.3%</text>
+<text x="88" y="396.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">유형에 따른 차이 없음 · 9명</text>
+<rect x="698" y="377" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="377" width="176.358" height="23" fill="#A8B7B9"/>
+<text x="1512" y="396.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">27.3%</text>
+<text x="88" y="456.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">낯선 사람 · 5명</text>
+<rect x="698" y="437" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="437" width="98.192" height="23" fill="#A8B7B9"/>
+<text x="1512" y="456.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">15.2%</text>
+<text x="88" y="516.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">연인 · 4명</text>
+<rect x="698" y="497" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="497" width="78.166" height="23" fill="#A8B7B9"/>
+<text x="1512" y="516.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">12.1%</text>
+<text x="88" y="576.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">직장 동료 · 3명</text>
+<rect x="698" y="557" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="557" width="58.785999999999994" height="23" fill="#A8B7B9"/>
+<text x="1512" y="576.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">9.1%</text>
+<text x="88" y="636.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">친구 · 1명</text>
+<rect x="698" y="617" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="617" width="19.38" height="23" fill="#A8B7B9"/>
+<text x="1512" y="636.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.0%</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">후속 분석</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">관계의 친밀도와 보호 책임감이 어떻게 연결되는지 살펴본다.</text></g>
+<g id="slide-15" transform="translate(0,6860)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 개념 모델</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">책임감이 감정 조절로 이어지는가</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">예비조사에서 도출한 탐색적 가설이며, 인과관계는 검증 전이다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">15</text>
+<rect x="88" y="334" width="264" height="6" fill="#DAE1E2"/>
+<text x="88" y="399.61" font-family="Noto Sans KR" font-size="29" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">도로 자극</text>
+<text x="88" y="518.34" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">적대적 표현</text>
+<text x="88" y="556.82" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">끼어들기·지연</text>
+<text x="337" y="441.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">→</text>
+<rect x="376" y="334" width="264" height="6" fill="#DAE1E2"/>
+<text x="376" y="399.61" font-family="Noto Sans KR" font-size="29" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">분노 경험</text>
+<text x="376" y="518.34" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">불쾌감</text>
+<text x="376" y="556.82" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">표현·행동 충동</text>
+<text x="625" y="441.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">→</text>
+<rect x="664" y="334" width="264" height="6" fill="#DAE1E2"/>
+<text x="664" y="399.61" font-family="Noto Sans KR" font-size="29" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자 인식</text>
+<text x="664" y="518.34" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">함께 있는 타인</text>
+<text x="664" y="556.82" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">관계의 인식</text>
+<text x="913" y="441.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">→</text>
+<rect x="952" y="334" width="264" height="6" fill="#087E83"/>
+<text x="952" y="399.61" font-family="Noto Sans KR" font-size="29" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">안전 책임감</text>
+<text x="952" y="518.34" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">보호해야 한다는</text>
+<text x="952" y="556.82" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">자기조절 동기</text>
+<text x="1201" y="441.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">→</text>
+<rect x="1240" y="334" width="264" height="6" fill="#DAE1E2"/>
+<text x="1240" y="399.61" font-family="Noto Sans KR" font-size="29" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">표현·행동 조절</text>
+<text x="1240" y="518.34" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">표현 조절</text>
+<text x="1240" y="556.82" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">안전 행동 가능성</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">AI로의 연결</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">책임감 환기와 상황 재해석을 돕는 단서를 설계한다.</text></g>
+<g id="slide-16" transform="translate(1680,6860)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 디자인 원칙</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">자기조절을 지원하는 세 가지 원칙</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동승자 경험을 차량 내 AI 인터랙션으로 전환하기 위한 설계 가설</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">16</text>
+<text x="88" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01</text>
+<text x="88" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">낮은 강도의 존재감</text>
+<rect x="88" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">조용한 시각·청각 단서로</text>
+<text x="88" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">함께하는 느낌을 제공한다.</text>
+<text x="88" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">개입 강도와 시점을 조절한다.</text>
+<text x="581.3333333333333" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02</text>
+<text x="581.3333333333333" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">감정 완충</text>
+<rect x="581.3333333333333" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="581.3333333333333" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">감정 고조 상황에서</text>
+<text x="581.3333333333333" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">조명·사운드·환기 등을</text>
+<text x="581.3333333333333" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">통해 긴장 완화를 돕는다.</text>
+<text x="1074.6666666666665" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03</text>
+<text x="1074.6666666666665" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">안전 책임감 환기</text>
+<rect x="1074.6666666666665" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="1074.6666666666665" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">함께 탄 사람의 안전과</text>
+<text x="1074.6666666666665" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">도착의 중요성을 떠올리는</text>
+<text x="1074.6666666666665" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">짧은 메시지를 제안한다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">설계 기준</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">방해감·감시받는 느낌·사용자 선택권을 함께 고려한다.</text></g>
+<g id="slide-17" transform="translate(0,7840)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 프로토타입</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">비교할 세 가지 AI 인터랙션 모델</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동일한 운전 상황에서 제시 방식에 따른 경험 차이를 비교한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">17</text>
+<text x="88" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01</text>
+<text x="88" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">A · 시각적 존재감</text>
+<rect x="88" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">대시보드·클러스터와</text>
+<text x="88" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">앰비언트 라이트를 활용한다.</text>
+<text x="88" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">예: 안전 상태를 보여주는 빛</text>
+<text x="581.3333333333333" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02</text>
+<text x="581.3333333333333" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">B · 관계성 음성</text>
+<rect x="581.3333333333333" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="581.3333333333333" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">가까운 사람을 연상시키는</text>
+<text x="581.3333333333333" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">짧고 부드러운 음성을 쓴다.</text>
+<text x="581.3333333333333" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">예: “천천히 가도 괜찮아요.”</text>
+<text x="1074.6666666666665" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03</text>
+<text x="1074.6666666666665" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">C · 가상 동승자</text>
+<rect x="1074.6666666666665" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="1074.6666666666665" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">운전 맥락에 맞춰</text>
+<text x="1074.6666666666665" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">대화·음악·환기를 제안한다.</text>
+<text x="1074.6666666666665" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">예: 긴장 구간의 분위기 조율</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">비교 지표</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">분노 완화감 · 책임감 환기 · 방해감 · 신뢰감 · 수용성</text></g>
+<g id="slide-18" transform="translate(1680,7840)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">05 · 연구 방법</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">문헌과 경험 자료를 설계·평가로 연결</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">표본 수와 구체적인 실험 방식은 교수님 피드백을 반영해 확정한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">18</text>
+<text x="88" y="313.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01 · 문헌연구</text>
+<text x="422" y="313.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">운전 분노 척도, 감정 조절, 동승자 효과, 타자·책임, 차량 AI 검토</text>
+<rect x="88" y="369" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="412.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02 · 본 설문</text>
+<text x="422" y="412.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">예비 문항 보완, 표본과 연령대 확대, 동승 관계와 영향 이유 조사</text>
+<rect x="88" y="468" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="511.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03 · 분석</text>
+<text x="422" y="511.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">기술통계, 적절한 평균 비교·교차분석, 정성 응답 코딩</text>
+<rect x="88" y="567" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="610.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 제작</text>
+<text x="422" y="610.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">세 가지 AI 모델과 상황별 인터랙션 시나리오 구현</text>
+<rect x="88" y="666" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="709.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">05 · 평가</text>
+<text x="422" y="709.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">영상 시나리오, 목업 또는 주행 시뮬레이션을 활용한 사용자 평가</text></g>
+<g id="slide-19" transform="translate(0,8820)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">05 · 평가 계획</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">감정 변화와 인터페이스 경험을 함께 측정</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">개입 전후의 분노 경험과 표현·행동 억제를 구분해 살펴본다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">19</text>
+<text x="88" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01</text>
+<text x="88" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">평가 상황</text>
+<rect x="88" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">끼어들기, 경적, 상향등,</text>
+<text x="88" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">교통 지연 등</text>
+<text x="88" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">분노 유발 운전 시나리오</text>
+<text x="581.3333333333333" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02</text>
+<text x="581.3333333333333" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">비교 조건</text>
+<rect x="581.3333333333333" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="581.3333333333333" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">AI 없음 / 시각적 존재감 /</text>
+<text x="581.3333333333333" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">관계성 음성 / 가상 동승자</text>
+<text x="581.3333333333333" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">조건 순서와 자극 강도 고려</text>
+<text x="1074.6666666666665" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03</text>
+<text x="1074.6666666666665" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">측정 지표</text>
+<rect x="1074.6666666666665" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="1074.6666666666665" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">분노 경험·표현 조절</text>
+<text x="1074.6666666666665" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">책임감 환기·감시받는 느낌</text>
+<text x="1074.6666666666665" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">방해감·신뢰감·수용성</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">핵심 질문</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">AI의 개입이 책임감과 자기조절 경험으로 이어지는가?</text></g>
+<g id="slide-20" transform="translate(1680,8820)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">05 · 기대 기여</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">학술·인문학·디자인 관점의 기여</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">아래 항목은 연구 완료 후 기대하는 결과다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">20</text>
+<text x="88" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01</text>
+<text x="88" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">학술적 기여</text>
+<rect x="88" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">운전 분노와 동승자 효과를</text>
+<text x="88" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">연결하고, 조절 동기로서</text>
+<text x="88" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">안전 책임감을 탐색한다.</text>
+<text x="581.3333333333333" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02</text>
+<text x="581.3333333333333" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">인문학적 기여</text>
+<rect x="581.3333333333333" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="581.3333333333333" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">자동차 내부를 감정과</text>
+<text x="581.3333333333333" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">타인에 대한 책임이</text>
+<text x="581.3333333333333" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">교차하는 공간으로 읽는다.</text>
+<text x="1074.6666666666665" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03</text>
+<text x="1074.6666666666665" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">디자인 기여</text>
+<rect x="1074.6666666666665" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="1074.6666666666665" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">자기조절을 돕는 차량 AI의</text>
+<text x="1074.6666666666665" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">개입 방식과 강도를</text>
+<text x="1074.6666666666665" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">HMI 설계 원칙으로 제안한다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">최종 산출물</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자 경험 분석 · AI 프로토타입 · 감정 조절 지원 설계 가이드</text></g>
+<g id="slide-21" transform="translate(0,9800)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">05 · 한계와 보완</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">현재 자료로 말할 수 있는 범위를 구분한다</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">예비조사의 발견을 본조사와 평가에서 구체적으로 확인한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">21</text>
+<text x="88" y="313.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">표본의 한계</text>
+<text x="422" y="313.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">N=33, 20대 69.7% → 연령과 운전 경력을 고려해 표본 확대</text>
+<rect x="88" y="369" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="412.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">자기보고의 한계</text>
+<text x="422" y="412.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">실제 행동과 다를 수 있음 → 시나리오·시뮬레이션 평가로 보완</text>
+<rect x="88" y="468" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="511.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">기제 해석의 한계</text>
+<text x="422" y="511.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">단일 선택 이유만으로 인과 추론 불가 → 책임감과 조절 경험을 별도 측정</text>
+<rect x="88" y="567" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="610.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">이론의 보완</text>
+<text x="422" y="610.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">타자·책임은 해석적 관점 → 인문학 원전·선행 논문 검토 필요</text>
+<rect x="88" y="666" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="709.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">설계의 검증</text>
+<text x="422" y="709.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">AI 효과는 아직 가설 → 개입 방식별 수용성과 방해감까지 평가</text></g>
+<g id="slide-22" transform="translate(1680,9800)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">05 · 진행 일정</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">피드백 이후의 연구 진행 순서</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">구체적인 기간은 연구 범위와 평가 방식 확정 후 배정한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">22</text>
+<text x="88" y="335.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">1단계 · 이론과 질문</text>
+<text x="422" y="335.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">선행연구 검토 → 연구문제 정교화 → 교수님 피드백 반영</text>
+<rect x="88" y="382" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="425.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">2단계 · 본조사</text>
+<text x="422" y="425.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">설문 문항 보완 → 응답 수집 → 정량·정성 분석</text>
+<rect x="88" y="472" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="515.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">3단계 · 설계</text>
+<text x="422" y="515.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">디자인 원칙 도출 → 세 가지 AI 모델 제작</text>
+<rect x="88" y="562" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="605.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">4단계 · 검증과 작성</text>
+<text x="422" y="605.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">사용자 평가 → 결과 해석 → 설계 가이드와 논문 작성</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">즉시 할 일</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">연구 중심축 · 조사 문항 · 평가 방식의 우선순위를 확정한다.</text></g>
+<g id="slide-23" transform="translate(0,10780)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">06 · 교수님 피드백</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">이번 면담에서 결정하고 싶은 다섯 가지</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구의 중심축과 검증 범위를 구체화하기 위한 질문</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">23</text>
+<text x="88" y="313.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01 · 중심축</text>
+<text x="422" y="313.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">감정 경험·타자성 해석과 차량 AI/HMI 설계의 비중을 어떻게 둘 것인가?</text>
+<rect x="88" y="369" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="412.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02 · 핵심 개념</text>
+<text x="422" y="412.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">안전 책임감을 중심 개념으로 설정하는 것이 타당한가?</text>
+<rect x="88" y="468" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="511.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03 · 문헌 범위</text>
+<text x="422" y="511.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">심리학·교통안전·HCI·인문학 중 어떤 이론을 중심으로 보완할 것인가?</text>
+<rect x="88" y="567" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="610.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 본조사</text>
+<text x="422" y="610.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">추가할 문항, 표본 조건, 책임감과 분노 조절의 측정 방식은 무엇인가?</text>
+<rect x="88" y="666" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="709.52" font-family="Noto Sans KR" font-size="28" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">05 · 평가 방식</text>
+<text x="422" y="709.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">영상 시나리오, 목업, 주행 시뮬레이션 중 어떤 접근이 적절한가?</text></g>
+<g id="slide-24" transform="translate(1680,10780)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">APPENDIX · 참고문헌</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">주요 참고문헌 1 / 2</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">운전 분노 측정과 감정 조절</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">서지 출처: 프로젝트 references.bib · 기존 연구계획서 수록 문헌</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">24</text>
+<text x="88" y="304.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">Deffenbacher et al. (1994)</text>
+<text x="88" y="338.89" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Development of a driving anger scale.</text>
+<text x="88" y="369.96999999999997" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Psychological Reports, 74(1), 83–91.</text>
+<text x="88" y="407.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">Deffenbacher et al. (2002)</text>
+<text x="88" y="441.89" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">The driving anger expression inventory: a measure of how people express their anger on the road.</text>
+<text x="88" y="472.96999999999997" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Behaviour Research and Therapy, 40(6), 717–737.</text>
+<text x="88" y="510.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">신용균·한덕웅·류준범 (2009)</text>
+<text x="88" y="544.89" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">운전분노척도에 의한 과속운전 행동의 예측.</text>
+<text x="88" y="575.97" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">한국심리학회지: 건강, 14(1), 159–173.</text>
+<text x="88" y="613.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">Gross (1998)</text>
+<text x="88" y="647.89" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Antecedent- and response-focused emotion regulation: Divergent consequences for experience,</text>
+<text x="88" y="678.97" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">expression, and physiology. Journal of Personality and Social Psychology, 74(1), 224–237.</text>
+<text x="88" y="716.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">Harris &amp; Nass (2011)</text>
+<text x="88" y="750.89" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Emotion regulation for frustrating driving contexts.</text>
+<text x="88" y="781.97" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Proceedings of CHI, 749–752.</text></g>
+<g id="slide-25" transform="translate(0,11760)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">APPENDIX · 참고문헌</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">주요 참고문헌 2 / 2</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동승자 효과와 차량 내 에이전트</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">서지 출처: 프로젝트 references.bib · 기존 연구계획서 수록 문헌</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">25</text>
+<text x="88" y="304.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">Baxter et al. (1990)</text>
+<text x="88" y="338.89" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Social facilitation and driver behaviour.</text>
+<text x="88" y="369.96999999999997" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">British Journal of Psychology, 81(3), 351–360.</text>
+<text x="88" y="407.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">Vollrath et al. (2002)</text>
+<text x="88" y="441.89" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">How the presence of passengers influences the risk of a collision with another vehicle.</text>
+<text x="88" y="472.96999999999997" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Accident Analysis and Prevention, 34(5), 649–654.</text>
+<text x="88" y="510.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">Lee &amp; Abdel-Aty (2008)</text>
+<text x="88" y="544.89" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Presence of passengers: Does it increase or reduce driver's crash potential?</text>
+<text x="88" y="575.97" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Accident Analysis and Prevention, 40(5), 1703–1712.</text>
+<text x="88" y="613.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">Jeon, Walker, &amp; Gable (2015)</text>
+<text x="88" y="647.89" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">The effects of social interactions with in-vehicle agents on a driver's anger level, driving performance,</text>
+<text x="88" y="678.97" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">situation awareness, and perceived workload. Applied Ergonomics, 50, 185–199.</text>
+<text x="88" y="716.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">Nass &amp; Moon (2000)</text>
+<text x="88" y="750.89" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">컴퓨터에 대한 사회적 반응 관련 문헌 · 기존 연구계획서 인용</text>
+<text x="88" y="781.97" font-family="Noto Sans KR" font-size="21" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">최종 논문 작성 시 원문과 상세 서지정보 확인 필요</text></g></svg>

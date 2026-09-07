@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">05 · 한계와 보완</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">현재 자료로 말할 수 있는 범위를 구분한다</text>
+<text x="88" y="219.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">예비조사의 발견을 본조사와 평가에서 구체적으로 확인한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">25</text>
+<text x="88" y="309.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">표본의 한계</text>
+<text x="422" y="309.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">N=33, 20대 69.7% → 연령과 운전 경력을 고려해 표본 확대</text>
+<rect x="88" y="369" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="408.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">자기보고의 한계</text>
+<text x="422" y="408.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">실제 행동과 다를 수 있음 → 시나리오·시뮬레이션 평가로 보완</text>
+<rect x="88" y="468" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="507.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">기제 해석의 한계</text>
+<text x="422" y="507.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">단일 선택 이유만으로 인과 추론 불가 → 책임감과 조절 경험을 별도 측정</text>
+<rect x="88" y="567" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="606.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">이론의 보완</text>
+<text x="422" y="606.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">타자·책임은 해석적 관점 → 인문학 원전·선행 논문 검토 필요</text>
+<rect x="88" y="666" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="705.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">설계의 검증</text>
+<text x="422" y="705.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">AI 효과는 아직 가설 → 개입 방식별 수용성과 방해감까지 평가</text></svg>

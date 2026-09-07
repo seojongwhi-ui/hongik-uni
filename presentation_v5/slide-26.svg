@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">05 · 진행 일정</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">피드백 이후의 연구 진행 순서</text>
+<text x="88" y="219.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">구체적인 기간은 연구 범위와 평가 방식 확정 후 배정한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">26</text>
+<text x="88" y="331.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">1단계 · 이론과 질문</text>
+<text x="422" y="331.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">선행연구 검토 → 연구문제 정교화 → 교수님 피드백 반영</text>
+<rect x="88" y="382" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="421.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">2단계 · 본조사</text>
+<text x="422" y="421.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">설문 문항 보완 → 응답 수집 → 정량·정성 분석</text>
+<rect x="88" y="472" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="511.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">3단계 · 설계</text>
+<text x="422" y="511.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">디자인 원칙 도출 → 세 가지 AI 모델 제작</text>
+<rect x="88" y="562" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="601.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">4단계 · 검증과 작성</text>
+<text x="422" y="601.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">사용자 평가 → 결과 해석 → 설계 가이드와 논문 작성</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">즉시 할 일</text>
+<text x="356" y="755.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">연구 중심축 · 조사 문항 · 평가 방식의 우선순위를 확정한다.</text></svg>

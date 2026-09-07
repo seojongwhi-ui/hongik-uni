@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 개념 모델</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">책임감이 감정 조절로 이어지는가</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">예비조사에서 도출한 탐색적 가설이며, 인과관계는 검증 전이다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">18</text>
+<rect x="88" y="334" width="264" height="6" fill="#DAE1E2"/>
+<text x="88" y="399.61" font-family="Noto Sans KR" font-size="29" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">도로 자극</text>
+<text x="88" y="518.34" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">적대적 표현</text>
+<text x="88" y="556.82" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">끼어들기·지연</text>
+<text x="337" y="441.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">→</text>
+<rect x="376" y="334" width="264" height="6" fill="#DAE1E2"/>
+<text x="376" y="399.61" font-family="Noto Sans KR" font-size="29" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">분노 경험</text>
+<text x="376" y="518.34" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">불쾌감</text>
+<text x="376" y="556.82" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">표현·행동 충동</text>
+<text x="625" y="441.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">→</text>
+<rect x="664" y="334" width="264" height="6" fill="#DAE1E2"/>
+<text x="664" y="399.61" font-family="Noto Sans KR" font-size="29" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자 인식</text>
+<text x="664" y="518.34" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">함께 있는 타인</text>
+<text x="664" y="556.82" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">관계의 인식</text>
+<text x="913" y="441.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">→</text>
+<rect x="952" y="334" width="264" height="6" fill="#087E83"/>
+<text x="952" y="399.61" font-family="Noto Sans KR" font-size="29" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">안전 책임감</text>
+<text x="952" y="518.34" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">보호해야 한다는</text>
+<text x="952" y="556.82" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">자기조절 동기</text>
+<text x="1201" y="441.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">→</text>
+<rect x="1240" y="334" width="264" height="6" fill="#DAE1E2"/>
+<text x="1240" y="399.61" font-family="Noto Sans KR" font-size="29" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">표현·행동 조절</text>
+<text x="1240" y="518.34" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">표현 조절</text>
+<text x="1240" y="556.82" font-family="Noto Sans KR" font-size="26" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">안전 행동 가능성</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">AI로의 연결</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">책임감 환기와 상황 재해석을 돕는 단서를 설계한다.</text></svg>

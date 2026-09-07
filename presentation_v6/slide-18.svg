@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 연구 문제</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">관찰에서 조사, 해석, 설계로</text>
+<text x="88" y="219.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">교수님 피드백을 통해 아래 질문의 범위와 우선순위를 정한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">18</text>
+<text x="88" y="308.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">RQ 1 · 자극</text>
+<text x="422" y="308.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">어떤 도로 상황에서 분노와 불쾌감이 강하게 나타나는가?</text>
+<rect x="88" y="368" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="407.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">RQ 2 · 표현</text>
+<text x="422" y="407.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">분노는 혼잣말, 욕설, 경적, 공격적 운전으로 어떻게 표출되는가?</text>
+<rect x="88" y="467" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="506.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">RQ 3 · 동승자</text>
+<text x="422" y="506.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자의 존재와 유형은 감정 표현 및 행동 조절과 어떻게 연결되는가?</text>
+<rect x="88" y="566" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="605.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">RQ 4 · 동기</text>
+<text x="422" y="605.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">안전 책임감과 시선·체면 의식은 조절 이유로 어떻게 나타나는가?</text>
+<rect x="88" y="665" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="704.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">RQ 5 · 설계</text>
+<text x="422" y="704.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자 경험을 책임감과 자기조절을 환기하는 AI로 구현할 수 있는가?</text></svg>

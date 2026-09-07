@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 프로토타입</text>
+<text x="88" y="143.32" font-family="Noto Sans KR" font-size="48" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">비교할 세 가지 AI 인터랙션 모델</text>
+<text x="88" y="210.43" font-family="Noto Sans KR" font-size="27" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동일한 운전 상황에서 제시 방식에 따른 경험 차이를 비교한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="862.89" font-family="Noto Sans KR" font-size="21" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">20</text>
+<text x="88" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01</text>
+<text x="88" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">A · 시각적 존재감</text>
+<rect x="88" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">대시보드·클러스터와</text>
+<text x="88" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">앰비언트 라이트를 활용한다.</text>
+<text x="88" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">예: 안전 상태를 보여주는 빛</text>
+<text x="581.3333333333333" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02</text>
+<text x="581.3333333333333" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">B · 관계성 음성</text>
+<rect x="581.3333333333333" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="581.3333333333333" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">가까운 사람을 연상시키는</text>
+<text x="581.3333333333333" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">짧고 부드러운 음성을 쓴다.</text>
+<text x="581.3333333333333" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">예: “천천히 가도 괜찮아요.”</text>
+<text x="1074.6666666666665" y="328.07" font-family="Noto Sans KR" font-size="23" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03</text>
+<text x="1074.6666666666665" y="402.06" font-family="Noto Sans KR" font-size="34" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">C · 가상 동승자</text>
+<rect x="1074.6666666666665" y="481" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="1074.6666666666665" y="537.52" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">운전 맥락에 맞춰</text>
+<text x="1074.6666666666665" y="578.96" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">대화·음악·환기를 제안한다.</text>
+<text x="1074.6666666666665" y="620.4" font-family="Noto Sans KR" font-size="28" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">예: 긴장 구간의 분위기 조율</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="753.25" font-family="Noto Sans KR" font-size="25" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">비교 지표</text>
+<text x="290" y="752.43" font-family="Noto Sans KR" font-size="27" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">분노 완화감 · 책임감 환기 · 방해감 · 신뢰감 · 수용성</text></svg>

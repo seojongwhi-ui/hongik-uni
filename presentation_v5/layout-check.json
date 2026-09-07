@@ -1,0 +1,16 @@
+{
+  "slides": 29,
+  "font": "Noto Sans KR",
+  "textLines": 529,
+  "overflow": [],
+  "palette": {
+    "white": "FFFFFF",
+    "ink": "202628",
+    "sub": "626D70",
+    "accent": "087E83",
+    "soft": "EAF5F4",
+    "rule": "DAE1E2",
+    "muted": "A8B7B9",
+    "track": "EDF1F2"
+  }
+}
