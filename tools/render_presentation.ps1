@@ -1,6 +1,6 @@
+param([string]$version = 'v11')
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path $PSScriptRoot -Parent
-$version = 'v7'
 $outputDir = Join-Path $projectRoot ('presentation_' + $version)
 $pptPath = Join-Path $projectRoot ('research_plan_professor_feedback_' + $version + '.pptx')
 $app = New-Object -ComObject PowerPoint.Application

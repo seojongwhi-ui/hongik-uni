@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">05 · 향후 연구계획</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">설문 결과 이후의 연구 진행 방향</text>
+<text x="88" y="219.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">결과 해석과 설계 제안은 후속 연구 단계에서 보완한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">19</text>
+<text x="88" y="314.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">1. 선행연구 보완</text>
+<text x="422" y="314.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">인문학: 타자·책임·관계 / 심리: 분노 조절·상황 재평가 / 사회: 동승자·체면·감정 동조</text>
+<rect x="88" y="379" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="418.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">2. 본조사 설계</text>
+<text x="422" y="418.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">예비조사 문항을 보완하고 표본 수, 연령대, 운전 경력 범위를 확대한다.</text>
+<rect x="88" y="483" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="522.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">3. 분석 방향</text>
+<text x="422" y="522.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자 유형, 안전 책임감, 시선 의식, 감정 표현 조절의 관계를 비교한다.</text>
+<rect x="88" y="587" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="626.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">4. AI 설계 검토</text>
+<text x="422" y="626.16" font-family="Noto Sans KR" font-size="24" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">혼자 운전할 때 동승자적 존재감과 안전 책임감을 환기하는 인터페이스 가능성을 탐색한다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">정리</text>
+<text x="356" y="755.16" font-family="Noto Sans KR" font-size="24" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">현재 발표 범위는 예비조사 결과까지이며, 피드백 후 이론과 설계를 구체화한다.</text></svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" />
+  <text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01 · 발표 구성</text>
+  <text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">연구의 전개 순서</text>
+  <text x="88" y="219.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구 배경에서 예비조사 결과, 선행연구 프레임워크, 향후 연구계획으로 이어지는 구조다.</text>
+  <rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2" />
+  <rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2" />
+  <text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+  <text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">02</text>
+  <text x="88" y="308.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">1. 연구 배경</text>
+  <text x="422" y="308.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">운전 중 분노 경험과 동승자 존재에 따른 자기조절 현상</text>
+  <rect x="88" y="353" width="1424" height="1.5" fill="#DAE1E2" />
+  <text x="88" y="392.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">2. 조사 목적</text>
+  <text x="422" y="392.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">해당 현상이 다른 운전자에게도 나타나는지 예비조사로 확인</text>
+  <rect x="88" y="437" width="1424" height="1.5" fill="#DAE1E2" />
+  <text x="88" y="476.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">3. 설문 개요</text>
+  <text x="422" y="476.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">응답자 특성, 문항 구성, 분석 범위 정리</text>
+  <rect x="88" y="521" width="1424" height="1.5" fill="#DAE1E2" />
+  <text x="88" y="560.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">4. 설문 결과</text>
+  <text x="422" y="560.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">분노 유발 상황, 반응 방식, 동승자 영향과 변화 이유 제시</text>
+  <rect x="88" y="605" width="1424" height="1.5" fill="#DAE1E2" />
+  <text x="88" y="644.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">5. 선행연구 프레임워크</text>
+  <text x="422" y="644.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">인문학·사회심리학·개인심리학 관점에서 결과 해석 구조 설정</text>
+  <rect x="88" y="689" width="1424" height="1.5" fill="#DAE1E2" />
+  <text x="88" y="728.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">6. 향후 연구계획</text>
+  <text x="422" y="728.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">본조사, 이론 보완, AI 인터페이스 설계와 평가 방향 정리</text>
+</svg>

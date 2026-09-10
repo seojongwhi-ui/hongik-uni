@@ -1,0 +1,483 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3280" height="9720" viewBox="0 0 3280 9720"><g id="slide-01" transform="translate(0,0)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">RESEARCH PROPOSAL · 2026.09</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자 존재와 운전자 분노 조절</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">홍익대학교 일반대학원 산업디자인과 · 서종휘 · 교수님 피드백용</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">01</text>
+<text x="88" y="355.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">차량 내 AI 인터페이스 설계 연구</text>
+<text x="92" y="486.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동승자에 따른 감정 표현 변화와 AI 활용 가능성 탐색</text>
+<rect x="88" y="577" width="80" height="5" fill="#087E83"/>
+<text x="88" y="663.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">혼자 운전할 때도 AI의 도움으로</text>
+<text x="88" y="722.8000000000001" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">스스로 감정과 행동을 조절할 수 있는가?</text></g>
+<g id="slide-02" transform="translate(1680,0)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01 · 발표 구성</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">연구의 전개 순서</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구 배경, 예비조사 결과, 선행연구를 통한 해석, 향후 연구계획 순으로 설명한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">02</text>
+<text x="88" y="307.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">1. 연구 배경</text>
+<text x="422" y="307.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 있을 때 운전자의 감정 표현과 행동이 달라지는 현상</text>
+<rect x="88" y="353" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="391.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">2. 조사 목적</text>
+<text x="422" y="391.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">해당 현상이 다른 운전자에게도 나타나는지 예비조사로 확인</text>
+<rect x="88" y="437" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="475.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">3. 설문 개요</text>
+<text x="422" y="475.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">응답자 특성, 문항 구성, 분석 범위 정리</text>
+<rect x="88" y="521" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="559.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">4. 설문 결과</text>
+<text x="422" y="559.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">분노 유발 상황, 반응 방식, 동승자 영향과 변화 이유 제시</text>
+<rect x="88" y="605" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="643.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">5. 선행연구와 해석</text>
+<text x="422" y="643.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">타인과의 관계, 타인의 평가, 개인의 감정 표현 성향으로 결과 해석</text>
+<rect x="88" y="689" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="727.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">6. 향후 연구계획</text>
+<text x="422" y="727.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">본조사, 이론 보완, AI 인터페이스 설계와 평가 방향 정리</text></g>
+<g id="slide-03" transform="translate(0,980)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01 · 연구 배경</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">관찰된 현상에서 출발한 문제의식</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">혼자 운전할 때와 누군가 함께 탈 때의 감정 표현 차이에 주목했다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">03</text>
+<text x="88" y="329.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">운전 중 분노가 발생하는 상황에서도</text>
+<text x="88" y="388.8" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 있을 때는 감정 표현과 행동이</text>
+<text x="88" y="448" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">상대적으로 조절되는 경험이 관찰되었다.</text>
+<text x="88" y="577.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">이 변화에는 타인의 시선을 의식하는 마음과</text>
+<text x="88" y="611.9666666666667" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">함께 탄 사람의 안전을 지켜야 한다는 책임감이 관련될 수 있다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">문제의식</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">이러한 변화가 다른 운전자에게도 나타나는지 예비조사를 통해 확인하고자 했다.</text></g>
+<g id="slide-04" transform="translate(1680,980)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01 · 연구 목적</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">혼자 운전할 때의 감정 조절을 어떻게 도울 수 있을까</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동승자가 있을 때 나타나는 감정·행동 조절을 AI로 도울 수 있는지 탐색한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">04</text>
+<text x="88" y="325.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">관찰 현상</text>
+<text x="422" y="325.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 있을 때 운전자가 감정 표현과 행동을 조절하는 현상에 주목한다.</text>
+<rect x="88" y="383" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="421.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">연구 질문</text>
+<text x="422" y="421.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">혼자 운전할 때도 AI의 도움으로 자신의 감정과 행동을 조절할 수 있을까?</text>
+<rect x="88" y="479" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="517.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">설계 가능성</text>
+<text x="422" y="517.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">AI의 말이나 반응이 주변 사람의 안전을 생각하는 데 도움이 될 수 있을까?</text>
+<rect x="88" y="575" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="613.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">장기 목표</text>
+<text x="422" y="613.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">감정 조절과 위험 행동 감소를 검증하고, 이후 사고 예방 가능성을 살펴본다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">설계 방향</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">운전자가 주변 사람의 안전을 떠올리고 자신의 반응을 조절하도록 돕는 AI를 탐색한다.</text></g>
+<g id="slide-05" transform="translate(0,1960)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01 · 조사 이유</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자에 따른 변화를 설문으로 확인했다</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">설문은 운전자의 경험을 파악하고 후속 연구 질문을 정하기 위한 예비조사로 진행했다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">05</text>
+<text x="88" y="307.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">확인 1</text>
+<text x="422" y="307.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">운전자들은 운전 중 분노를 경험하는가?</text>
+<rect x="88" y="368" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="406.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">확인 2</text>
+<text x="422" y="406.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">분노는 어떤 상황에서 특히 강하게 나타나는가?</text>
+<rect x="88" y="467" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="505.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">확인 3</text>
+<text x="422" y="505.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">분노가 발생했을 때 어떤 방식으로 반응하는가?</text>
+<rect x="88" y="566" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="604.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">확인 4</text>
+<text x="422" y="604.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 있으면 감정 표현을 줄이는가, 오히려 더 강하게 표현하는가?</text>
+<rect x="88" y="665" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="703.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">확인 5</text>
+<text x="422" y="703.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자의 영향을 받는 이유로 시선 의식과 안전 책임감 중 무엇을 선택하는가?</text></g>
+<g id="slide-06" transform="translate(1680,1960)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02 · 예비조사</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">설문조사 개요</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">운전 상황에서의 감정 및 행동 변화 조사 · 유효 응답 33명</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">06</text>
+<text x="88" y="377.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">33명</text>
+<text x="88" y="448.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">유효 응답</text>
+<text x="454" y="377.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">69.7%</text>
+<text x="454" y="448.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">20대 비중</text>
+<text x="820" y="377.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">90.9%</text>
+<text x="820" y="448.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동승 빈도: 가끔~항상</text>
+<text x="1186" y="377.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">42.4%</text>
+<text x="1186" y="448.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">주요 목적: 출퇴근</text>
+<rect x="88" y="530" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="577.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">여성 18명 · 남성 15명  |  최근 6개월 이내 운전 경험이 있는 성인</text>
+<text x="88" y="657.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">DAS·K-DAS 참고 재구성 문항 / 5점 척도 / 유형·이유 선택 / 정성 경험</text>
+<text x="88" y="764.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">원척도 전체를 그대로 적용한 검사가 아니며, 리워드용 개인정보는 분석과 분리한다.</text></g>
+<g id="slide-07" transform="translate(0,2940)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02 · 결과 1</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">운전자는 어떤 상황에서 분노를 경험하는가</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">상황별 평균 · 5점 척도</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33 · 기술통계</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">07</text>
+<text x="703" y="286.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">0</text>
+<text x="1026" y="286.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">2.5</text>
+<text x="1349" y="286.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">5</text>
+<text x="88" y="332.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">적대적 표현: 경적·상향등·손짓</text>
+<rect x="698" y="317" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="317" width="501.296" height="23" fill="#087E83"/>
+<text x="1512" y="331.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="end" letter-spacing="0">3.88</text>
+<text x="88" y="392.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">갑작스러운 끼어들기</text>
+<rect x="698" y="377" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="377" width="437.988" height="23" fill="#A8B7B9"/>
+<text x="1512" y="391.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.39</text>
+<text x="88" y="452.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">타인의 교통법규 위반</text>
+<rect x="698" y="437" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="437" width="434.11199999999997" height="23" fill="#A8B7B9"/>
+<text x="1512" y="451.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.36</text>
+<text x="88" y="512.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">교통 체증·이동시간 지연</text>
+<rect x="698" y="497" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="497" width="422.48400000000004" height="23" fill="#A8B7B9"/>
+<text x="1512" y="511.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.27</text>
+<text x="88" y="572.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">뒤차의 안전거리 미확보</text>
+<rect x="698" y="557" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="557" width="403.104" height="23" fill="#A8B7B9"/>
+<text x="1512" y="571.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.12</text>
+<text x="88" y="632.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">앞차의 지나친 서행</text>
+<rect x="698" y="617" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="617" width="391.476" height="23" fill="#A8B7B9"/>
+<text x="1512" y="631.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.03</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">확인된 점</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">조사한 6개 상황 중, 경적·상향등·손짓으로 불만을 받는 상황의 평균이 가장 높았다.</text></g>
+<g id="slide-08" transform="translate(1680,2940)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02 · 결과 2</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">분노가 발생했을 때 어떻게 반응하는가</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">표현 방식별 평균 · 5점 척도</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33 · 기술통계</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">08</text>
+<text x="703" y="299.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">0</text>
+<text x="1026" y="299.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">2.5</text>
+<text x="1349" y="299.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">5</text>
+<text x="88" y="345.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">혼잣말</text>
+<rect x="698" y="330" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="330" width="441.86400000000003" height="23" fill="#087E83"/>
+<text x="1512" y="344.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="end" letter-spacing="0">3.42</text>
+<text x="88" y="413.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">욕설</text>
+<rect x="698" y="398" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="398" width="337.212" height="23" fill="#A8B7B9"/>
+<text x="1512" y="412.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">2.61</text>
+<text x="88" y="481.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">경적 사용</text>
+<rect x="698" y="466" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="466" width="277.78" height="23" fill="#A8B7B9"/>
+<text x="1512" y="480.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">2.15</text>
+<text x="88" y="549.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">공격적 운전 경험</text>
+<rect x="698" y="534" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="534" width="254.52399999999997" height="23" fill="#A8B7B9"/>
+<text x="1512" y="548.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">1.97</text>
+<text x="88" y="617.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">불만 표현 행동: 손짓·상향등 등</text>
+<rect x="698" y="602" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="602" width="208.01200000000003" height="23" fill="#A8B7B9"/>
+<text x="1512" y="616.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">1.61</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">확인된 점</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">혼잣말과 욕설의 평균 응답 점수가 공격적 운전 경험과 외부 불만 표현 행동보다 높았다.</text></g>
+<g id="slide-09" transform="translate(0,3920)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02 · 결과 3</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 있으면 분노 표현을 조절하는가</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동승자 존재에 따른 변화 · 5점 척도</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33 · 자기보고 응답</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">09</text>
+<text x="703" y="299.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">0</text>
+<text x="1026" y="299.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">2.5</text>
+<text x="1349" y="299.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">5</text>
+<text x="88" y="345.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">감정 표현 조절</text>
+<rect x="698" y="330" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="330" width="524.5519999999999" height="23" fill="#087E83"/>
+<text x="1512" y="344.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="end" letter-spacing="0">4.06</text>
+<text x="88" y="413.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">화나는 상황에서 행동 참음</text>
+<rect x="698" y="398" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="398" width="520.676" height="23" fill="#A8B7B9"/>
+<text x="1512" y="412.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">4.03</text>
+<text x="88" y="481.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">운전 행동이 달라진다고 느낌</text>
+<rect x="698" y="466" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="466" width="454.784" height="23" fill="#A8B7B9"/>
+<text x="1512" y="480.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.52</text>
+<text x="88" y="549.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자 반응에 따른 행동 변화</text>
+<rect x="698" y="534" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="534" width="360.46799999999996" height="23" fill="#A8B7B9"/>
+<text x="1512" y="548.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">2.79</text>
+<text x="88" y="617.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">오히려 감정 표현 증가</text>
+<rect x="698" y="602" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="602" width="254.52399999999997" height="23" fill="#A8B7B9"/>
+<text x="1512" y="616.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">1.97</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">확인된 점</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">감정 표현 조절은 평균 4.06점, 행동을 참는다는 응답은 4.03점으로 나타났다.</text></g>
+<g id="slide-10" transform="translate(1680,3920)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02 · 핵심 결과</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자의 영향 이유: 안전 책임감이 최다</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동승자의 영향을 받는 가장 큰 이유로, 시선 의식보다 안전 책임감이 많이 선택되었다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · 영향 이유 단일 선택 · N=33</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">10</text>
+<text x="88" y="349.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자의 안전에 대한 책임감</text>
+<text x="88" y="479.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">63.6%</text>
+<text x="96" y="621.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">21명 / 33명</text>
+<rect x="1040" y="308" width="2" height="354" fill="#DAE1E2"/>
+<text x="1092" y="336.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">시선·체면 관련 응답</text>
+<text x="1092" y="420.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">좋은 모습을 보이고 싶음</text>
+<text x="1092" y="454.9666666666667" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">9.1% · 3명</text>
+<text x="1092" y="568.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">다른 사람이 보고 있음</text>
+<text x="1092" y="602.9666666666667" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">6.1% · 2명</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">핵심 발견</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">33명 중 21명이 안전 책임감을 선택했다. 책임감이 행동 조절에 미치는 영향은 추가로 확인한다.</text></g>
+<g id="slide-11" transform="translate(0,4900)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02 · 결과 4</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 영향을 미치는 이유 전체</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">가장 큰 이유를 선택한 응답 비율 · 합계는 반올림으로 100%와 다를 수 있음</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33 · 단일 선택</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">11</text>
+<text x="703" y="286.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">0</text>
+<text x="1026" y="286.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">50</text>
+<text x="1349" y="286.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">100</text>
+<text x="88" y="332.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">안전 책임감 · 21명</text>
+<rect x="698" y="317" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="317" width="410.856" height="23" fill="#087E83"/>
+<text x="1512" y="331.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="end" letter-spacing="0">63.6%</text>
+<text x="88" y="392.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">영향을 거의 받지 않음 · 4명</text>
+<rect x="698" y="377" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="377" width="78.166" height="23" fill="#A8B7B9"/>
+<text x="1512" y="391.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">12.1%</text>
+<text x="88" y="452.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">좋은 모습을 보이고 싶음 · 3명</text>
+<rect x="698" y="437" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="437" width="58.785999999999994" height="23" fill="#A8B7B9"/>
+<text x="1512" y="451.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">9.1%</text>
+<text x="88" y="512.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">다른 사람이 보고 있음 · 2명</text>
+<rect x="698" y="497" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="497" width="39.406" height="23" fill="#A8B7B9"/>
+<text x="1512" y="511.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">6.1%</text>
+<text x="88" y="572.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">함께 감정을 공유함 · 2명</text>
+<rect x="698" y="557" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="557" width="39.406" height="23" fill="#A8B7B9"/>
+<text x="1512" y="571.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">6.1%</text>
+<text x="88" y="632.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자의 반응이나 말 · 1명</text>
+<rect x="698" y="617" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="617" width="19.38" height="23" fill="#A8B7B9"/>
+<text x="1512" y="631.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.0%</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">확인할 점</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">안전 책임감이 실제로 감정 표현과 행동을 바꾸는 원인인지는 후속 연구에서 확인한다.</text></g>
+<g id="slide-12" transform="translate(1680,4900)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02 · 결과 5</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">누구와 탈 때 운전 행동이 가장 달라지는가</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">가족이 가장 많았다. 이 문항은 변화의 방향이나 안전성 향상을 직접 묻지는 않았다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33 · 단일 선택</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">12</text>
+<text x="703" y="286.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">0</text>
+<text x="1026" y="286.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">50</text>
+<text x="1349" y="286.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="middle" letter-spacing="0">100</text>
+<text x="88" y="332.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">가족 · 11명</text>
+<rect x="698" y="317" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="317" width="215.118" height="23" fill="#087E83"/>
+<text x="1512" y="331.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="end" letter-spacing="0">33.3%</text>
+<text x="88" y="392.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">유형에 따른 차이 없음 · 9명</text>
+<rect x="698" y="377" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="377" width="176.358" height="23" fill="#A8B7B9"/>
+<text x="1512" y="391.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">27.3%</text>
+<text x="88" y="452.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">낯선 사람 · 5명</text>
+<rect x="698" y="437" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="437" width="98.192" height="23" fill="#A8B7B9"/>
+<text x="1512" y="451.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">15.2%</text>
+<text x="88" y="512.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">연인 · 4명</text>
+<rect x="698" y="497" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="497" width="78.166" height="23" fill="#A8B7B9"/>
+<text x="1512" y="511.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">12.1%</text>
+<text x="88" y="572.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">직장 동료 · 3명</text>
+<rect x="698" y="557" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="557" width="58.785999999999994" height="23" fill="#A8B7B9"/>
+<text x="1512" y="571.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">9.1%</text>
+<text x="88" y="632.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">친구 · 1명</text>
+<rect x="698" y="617" width="646" height="23" fill="#EDF1F2"/>
+<rect x="698" y="617" width="19.38" height="23" fill="#A8B7B9"/>
+<text x="1512" y="631.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="end" letter-spacing="0">3.0%</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">후속 질문</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자와의 관계에 따라 책임감과 운전 행동이 어떻게 달라지는지 살펴본다.</text></g>
+<g id="slide-13" transform="translate(0,5880)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03 · 설문에서 얻은 시사점</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">설문 결과를 바탕으로 정한 연구 질문</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">이번 33명의 응답을 바탕으로, 안전 책임감과 감정·행동 조절의 관계에 주목한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">13</text>
+<text x="88" y="311.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">발견 1</text>
+<text x="422" y="311.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">조사한 상황 중 타인의 경적·상향등·손짓에 대한 분노 평균이 가장 높았다.</text>
+<rect x="88" y="369" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="407.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">발견 2</text>
+<text x="422" y="407.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">혼잣말과 욕설의 평균 점수가 공격적 운전과 외부 불만 표현 행동보다 높았다.</text>
+<rect x="88" y="465" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="503.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">발견 3</text>
+<text x="422" y="503.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 있을 때 표현을 조절하고 행동을 참는다는 응답 평균은 약 4점이었다.</text>
+<rect x="88" y="561" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="599.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">발견 4</text>
+<text x="422" y="599.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자의 영향을 받는 이유로 안전 책임감이 가장 많이 선택되었다(63.6%).</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">연구 질문</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자의 안전을 지켜야 한다는 책임감은 운전자의 감정 표현과 행동 조절에 어떤 영향을 주는가?</text></g>
+<g id="slide-14" transform="translate(1680,5880)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 선행연구</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자에 따른 변화를 이해하는 세 관점</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">타인과의 관계, 평가받는다는 의식, 감정 표현 성향을 함께 살펴본다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: Goffman(1959), Cottrell(1972), 윤보영·이순철(2011) · 연구자 해석 포함</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">14</text>
+<text x="88" y="321.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">01</text>
+<text x="88" y="405.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">인문·사회적 관점</text>
+<rect x="88" y="478" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="529.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Goffman(1959)</text>
+<text x="88" y="563.9666666666667" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">타인에게 어떤 모습으로 보이고 싶은가? 함께</text>
+<text x="88" y="598.5" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">있는 사람에 따라 말과 행동을 달리하는</text>
+<text x="88" y="633.0333333333333" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">이유를 살펴본다.</text>
+<text x="581.3333333333333" y="321.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02</text>
+<text x="581.3333333333333" y="405.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">사회심리학적 관점</text>
+<rect x="581.3333333333333" y="478" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="581.3333333333333" y="529.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Cottrell(1972)</text>
+<text x="581.3333333333333" y="563.9666666666667" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">다른 사람이 내 행동을 평가한다고 느끼는가?</text>
+<text x="581.3333333333333" y="598.5" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">평가받는다는 의식이 반응을 바꾸는지</text>
+<text x="581.3333333333333" y="633.0333333333333" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">살펴본다.</text>
+<text x="1074.6666666666665" y="321.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">03</text>
+<text x="1074.6666666666665" y="405.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">개인심리학적 관점</text>
+<rect x="1074.6666666666665" y="478" width="437.3333333333333" height="1.5" fill="#DAE1E2"/>
+<text x="1074.6666666666665" y="529.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">윤보영·이순철(2011)</text>
+<text x="1074.6666666666665" y="563.9666666666667" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">감정을 드러내기 어려운 이유는 무엇인가?</text>
+<text x="1074.6666666666665" y="598.5" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">감정 표현 성향과 난폭운전의 관련성을</text>
+<text x="1074.6666666666665" y="633.0333333333333" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">살펴본다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">해석 방향</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">세 관점으로 동승자에 따른 변화를 해석하고, 안전 책임감을 설명할 선행연구를 보완한다.</text></g>
+<g id="slide-15" transform="translate(0,6860)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 인문·사회적 관점</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">자아 연출 이론: 타인 앞에서 달라지는 행동</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">Goffman(1959)은 사람들이 타인에게 보이는 자신의 모습을 조절한다고 설명한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: Goffman, The Presentation of Self in Everyday Life, 1959 · 운전 상황 적용은 연구자 해석</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">15</text>
+<text x="88" y="319.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">핵심 개념</text>
+<text x="422" y="319.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">사람은 함께 있는 상대와 상황에 맞춰 자신의 말투, 표정, 행동을 조절한다.</text>
+<rect x="88" y="377" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="415.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">전면 영역</text>
+<text x="422" y="415.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">관객 앞의 무대처럼, 타인에게 보이고 싶은 모습에 맞춰 행동하는 상황이다.</text>
+<rect x="88" y="473" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="511.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">후면 영역</text>
+<text x="422" y="511.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">그 관객에게서 벗어나, 앞에서 유지하던 말투나 태도를 내려놓을 수 있는 상황이다.</text>
+<rect x="88" y="569" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="607.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">운전 상황에 적용</text>
+<text x="422" y="607.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">혼자 있을 때보다 동승자가 있을 때 자신의 말과 행동이 어떻게 보일지 더 의식할 수 있다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">적용 해석</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 있으면 운전자는 다른 사람을 의식해 자신의 말과 행동을 조절할 수 있다.</text></g>
+<g id="slide-16" transform="translate(1680,6860)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 사회심리학</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">평가 불안: 다른 사람의 판단을 의식하는 마음</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">Cottrell(1972)은 타인에게 평가받을 수 있다는 예상이 수행에 영향을 준다고 설명했다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: Cottrell, Social Facilitation, 1972; Cottrell et al., 1968 · 운전 적용은 가설</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">16</text>
+<text x="88" y="311.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">핵심 개념</text>
+<text x="422" y="311.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">평가 불안은 다른 사람이 자신의 행동이나 능력을 어떻게 판단할지 신경 쓰는 마음이다.</text>
+<rect x="88" y="372" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="410.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">관련 실험</text>
+<text x="422" y="410.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">Cottrell 등(1968)의 과제 실험에서는 관찰하는 관객이 있을 때와 단순히 타인이 있을 때의 반응이 달랐다.</text>
+<rect x="88" y="471" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="509.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">운전 상황에 적용</text>
+<text x="422" y="509.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 운전 태도를 나쁘게 볼까 신경 쓰여 거친 말이나 행동을 줄이는지 확인할 수 있다.</text>
+<rect x="88" y="570" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="608.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">설문과의 연결</text>
+<text x="422" y="608.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">이번 설문에서는 평가와 관련된 이유보다 안전 책임감이 많이 선택되었다. 두 이유를 구분해 살펴본다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">검토할 점</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">평가받는다는 의식이 운전 중 분노 표현을 줄이는지는 별도로 검증해야 한다.</text></g>
+<g id="slide-17" transform="translate(0,7840)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 개인심리학</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">정서표현갈등: 감정을 드러낼 때의 망설임</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">윤보영·이순철(2011)은 익명상황의 난폭운전과 감정 표현 성향의 관련성을 조사했다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 윤보영·이순철(2011), 익명상황의 운전행동과 운전분노 및 정서표현갈등과의 관계</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">17</text>
+<text x="88" y="307.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">정서표현갈등</text>
+<text x="422" y="307.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">감정을 드러내고 싶지만, 표현해도 괜찮을지 걱정하며 망설이는 상태를 뜻한다.</text>
+<rect x="88" y="371" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="409.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">자기방어적 양가성</text>
+<text x="422" y="409.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">감정을 표현하고 싶은 마음과 거절당하거나 상처받을까 걱정하는 마음이 함께 있는 성향이다.</text>
+<rect x="88" y="473" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="511.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">선행연구 결과</text>
+<text x="422" y="511.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">익명상황에서 난폭운전을 많이 보고한 집단은 운전분노와 정서표현갈등, 자기방어적 양가성 수준도 높았다.</text>
+<rect x="88" y="575" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="613.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">후속 연구 질문</text>
+<text x="422" y="613.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">평소 감정 표현을 어려워하는 정도에 따라, 동승자가 있을 때의 표현·행동 변화도 달라지는가?</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">해석 범위</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">선행연구는 관련성을 보여준다. 감정을 억누르면 난폭운전을 하게 된다고 단정할 수는 없다.</text></g>
+<g id="slide-18" transform="translate(1680,7840)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">04 · 선행연구 종합</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자가 행동을 바꾸는 이유를 어떻게 확인할까</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">선행연구의 설명과 설문의 안전 책임감 응답을 연결해 후속 연구 질문을 정리한다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 선행연구 및 예비조사 결과를 바탕으로 한 연구자 제안 · 검증 전</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">18</text>
+<text x="88" y="311.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">비교할 상황</text>
+<text x="422" y="311.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">혼자 운전할 때와 동승자가 있을 때, 감정과 행동이 어떻게 달라지는지 비교한다.</text>
+<rect x="88" y="372" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="410.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">구분할 두 이유</text>
+<text x="422" y="410.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">타인에게 나쁘게 보이고 싶지 않은 마음과, 함께 탄 사람의 안전을 지키려는 책임감을 구분한다.</text>
+<rect x="88" y="471" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="509.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">함께 살필 개인차</text>
+<text x="422" y="509.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">평소 감정을 표현할 때 느끼는 갈등이 동승자에 따른 변화와 관련되는지 확인한다.</text>
+<rect x="88" y="570" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="608.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">구분할 결과</text>
+<text x="422" y="608.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">실제로 느끼는 화의 정도, 말로 표현하는 정도, 위험한 운전 행동을 각각 측정한다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">핵심 가설</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">동승자의 안전에 대한 책임감이 높을수록 감정 표현과 위험 행동을 더 조절할 것이다.</text></g>
+<g id="slide-19" transform="translate(0,8820)"><rect x="0" y="0" width="1600" height="900" fill="#FFFFFF"/>
+<text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">05 · 향후 연구계획</text>
+<text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">설문 결과 이후의 연구 진행 방향</text>
+<text x="88" y="218.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">안전 책임감이 작용하는 이유를 보완하고, 본조사와 AI 설계로 이어간다.</text>
+<rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2"/>
+<rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">연구계획서 초안 · 교수님 피드백용</text>
+<text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">19</text>
+<text x="88" y="313.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">1. 선행연구 보완</text>
+<text x="422" y="313.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">타인을 돌볼 책임, 분노 조절, 함께 화를 내는 현상, AI를 사회적 상대로 대하는 반응을 검토한다.</text>
+<rect x="88" y="379" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="417.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">2. 본조사 설계</text>
+<text x="422" y="417.43333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">표본을 확대하고 책임감, 시선 의식, 분노의 정도, 감정 표현, 운전 행동을 구분해 묻는다.</text>
+<rect x="88" y="483" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="521.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">3. 분석 방향</text>
+<text x="422" y="521.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">동승자와의 관계와 개인의 감정 표현 성향에 따라, 조절되는 이유와 정도가 다른지 비교한다.</text>
+<rect x="88" y="587" width="1424" height="1.5" fill="#DAE1E2"/>
+<text x="88" y="625.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">4. AI 설계·평가</text>
+<text x="422" y="625.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">AI가 안전 책임감을 떠올리게 하는지, 감정·행동 조절에 도움이 되는지, 주의를 방해하는지 평가한다.</text>
+<rect x="88" y="704" width="1424" height="94" fill="#EAF5F4"/>
+<text x="112" y="764.6" font-family="Noto Sans KR" font-size="40" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">현재 단계</text>
+<text x="356" y="754.4333333333334" font-family="Noto Sans KR" font-size="23.333333333333336" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">예비조사 결과와 선행연구에 근거한 해석을 제시하며, 원인과 AI 효과는 후속 연구에서 검증한다.</text></g></svg>

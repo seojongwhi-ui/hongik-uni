@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" />
+  <text x="88" y="59.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">02 · 예비조사</text>
+  <text x="88" y="156.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#202628" text-anchor="start" letter-spacing="0">설문조사 개요</text>
+  <text x="88" y="219.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">운전 상황에서의 감정 및 행동 변화 조사 · 유효 응답 33명</text>
+  <rect x="88" y="253" width="1424" height="1.5" fill="#DAE1E2" />
+  <rect x="88" y="826" width="1424" height="1.5" fill="#DAE1E2" />
+  <text x="88" y="862.62" font-family="Noto Sans KR" font-size="18" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">출처: 설문결과_통계분석보고서 · N=33</text>
+  <text x="1512" y="861.8" font-family="Noto Sans KR" font-size="20" font-weight="700" fill="#626D70" text-anchor="end" letter-spacing="0">06</text>
+  <text x="88" y="377.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">33명</text>
+  <text x="88" y="449.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">유효 응답</text>
+  <text x="454" y="377.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">69.7%</text>
+  <text x="454" y="449.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">20대 비중</text>
+  <text x="820" y="377.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">90.9%</text>
+  <text x="820" y="449.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">동승 빈도: 가끔~항상</text>
+  <text x="1186" y="377.4" font-family="Noto Sans KR" font-size="60" font-weight="700" fill="#087E83" text-anchor="start" letter-spacing="0">42.4%</text>
+  <text x="1186" y="449.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">주요 목적: 출퇴근</text>
+  <rect x="88" y="530" width="1424" height="1.5" fill="#DAE1E2" />
+  <text x="88" y="578.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">여성 18명 · 남성 15명  |  최근 6개월 이내 운전 경험이 있는 성인</text>
+  <text x="88" y="658.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#202628" text-anchor="start" letter-spacing="0">DAS·K-DAS 참고 재구성 문항 / 5점 척도 / 유형·이유 선택 / 정성 경험</text>
+  <text x="88" y="765.16" font-family="Noto Sans KR" font-size="23.3333333333333" font-weight="400" fill="#626D70" text-anchor="start" letter-spacing="0">원척도 전체를 그대로 적용한 검사가 아니며, 리워드용 개인정보는 분석과 분리한다.</text>
+</svg>

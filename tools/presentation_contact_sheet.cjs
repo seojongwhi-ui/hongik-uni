@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { createCanvas, loadImage } = require(path.join(process.env.TEMP, 'auto-paper-ppt/node_modules/@napi-rs/canvas'));
-const dir = path.resolve(__dirname, '../presentation_v7');
+const dir = process.argv[2] ? path.resolve(process.argv[2]) : path.resolve(__dirname, '../presentation_v10');
 async function main() {
   const names = fs.readdirSync(dir).filter(n => /^slide-\d+\.png$/.test(n)).sort();
   const canvas = createCanvas(2000, Math.ceil(names.length / 4) * 303);
