@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', 'Noto Sans KR', sans-serif;
+  color: #202724;
+  background: #e5eae5;
+  font-synthesis: none;
+  letter-spacing: 0;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; }
+body { overflow: hidden; overscroll-behavior: none; background: #121917; }
+button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+
+.app-shell { display: grid; grid-template-rows: 58px minmax(0, 1fr); width: 100%; height: 100dvh; min-height: 100svh; overflow: hidden; background: #121917; }
+.topbar { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 12px; min-width: 0; padding-left: max(20px, env(safe-area-inset-left)); padding-right: max(20px, env(safe-area-inset-right)); background: #eef2ee; border-bottom: 1px solid #bdc9c1; }
+.brand { display: flex; align-items: center; gap: 11px; }
+.brand-mark { display: grid; place-items: center; width: 32px; height: 32px; border: 1.5px solid #243832; border-radius: 50%; }
+.brand-mark span { width: 9px; height: 9px; background: #3b7568; border-radius: 50%; }
+.brand div { display: flex; align-items: baseline; gap: 10px; }
+.brand h1 { margin: 0; font-size: 15px; font-weight: 700; line-height: 1; }
+.brand div > span { font-size: 11px; font-weight: 600; color: #5c7064; }
+.speedometer { display: flex; align-items: center; gap: 10px; min-width: 0; font-variant-numeric: tabular-nums; }
+.speed-reading { display: flex; align-items: baseline; gap: 4px; min-width: 86px; }
+#speed-value { min-width: 2ch; text-align: right; font-size: 31px; font-weight: 700; line-height: 1; }
+.speed-unit { color: #5d6d61; font-size: 11px; font-weight: 600; white-space: nowrap; }
+.speed-meta { display: grid; gap: 1px; max-width: 82px; color: #5d6d61; font-size: 10px; font-weight: 600; line-height: 1.2; }
+.speed-meta span:first-child { color: #243832; font-weight: 700; }
+.speedometer[data-state='active'] .speed-meta span:first-child { color: #28755b; }
+.session-start { justify-self: end; display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 40px; padding: 8px 12px; border: 1px solid #b9c9bd; border-radius: 6px; background: #f7faf7; color: #263f33; font: inherit; font-size: 11px; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.session-start[hidden] { display: none; }
+.session-start:hover { background: #f9fcf8; }
+.session-start:focus-visible { outline: 2px solid #3c8c63; outline-offset: 2px; }
+.session-start svg { width: 16px; height: 16px; stroke-width: 2; }
+
+.stage { display: grid; grid-template-columns: minmax(0, 1fr); min-height: 0; background: #121917; }
+.pane { position: relative; min-width: 0; min-height: 0; overflow: hidden; }
+
+.pane-top, .pane-bottom { position: absolute; z-index: 2; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px max(22px, env(safe-area-inset-right)) 14px max(22px, env(safe-area-inset-left)); }
+.pane-top { top: 0; }
+.pane-bottom { bottom: 0; }
+.pane h2 { margin: 0; font-size: 14px; font-weight: 700; line-height: 1.25; white-space: nowrap; }
+.pane-state { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 600; white-space: nowrap; }
+.state-dot { width: 7px; height: 7px; flex: 0 0 7px; border-radius: 50%; background: #a9b8ad; }
+.passenger-pane { background: #121917; }
+.scene, .scene canvas { width: 100%; height: 100%; display: block; }
+.passenger-top { color: #edf3ef; background: rgba(18, 27, 24, 0.88); border-bottom: 1px solid rgba(181, 198, 188, 0.22); }
+.passenger-top .state-dot { background: #72b496; }
+.passenger-bottom { color: #c8d4cc; background: rgba(18, 27, 24, 0.9); border-top: 1px solid rgba(181, 198, 188, 0.22); font-size: 11px; font-weight: 600; }
+#speech-state { max-width: 110px; line-height: 1.25; }
+.scenario-controls { display: flex; gap: 8px; }
+.scenario-button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; width: 104px; min-height: 44px; padding: 8px 11px; border: 1px solid #b9cbbf; border-radius: 6px; background: #f2f6f2; color: #2c4638; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.scenario-button:hover { background: #ffffff; }
+.scenario-button:focus-visible { outline: 2px solid #3c8c63; outline-offset: 2px; }
+.scenario-button svg { width: 16px; height: 16px; stroke-width: 2; }
+.passenger-pane[data-scenario='speeding'] #simulate-speeding { border-color: #c7824f; background: #fff1e7; color: #8a4a23; }
+.passenger-pane[data-scenario='braking'] #simulate-braking { border-color: #c2685c; background: #ffefea; color: #883c35; }
+.passenger-pane[data-motion='departure'] #simulate-departure { border-color: #6e9d86; background: #e3f2e9; color: #285f48; }
+.passenger-pane[data-scenario='speeding'] .passenger-top .state-dot { background: #c7824f; }
+.passenger-pane[data-scenario='braking'] .passenger-top .state-dot { background: #c2685c; }
+
+.passenger-pane[data-speech='active'][data-scenario='none'] .passenger-top .state-dot { background: #d17f60; }
+.passenger-pane[data-speeding='true'][data-scenario='none'] .passenger-top .state-dot { background: #c7824f; }
+
+.speech-dialog { width: min(390px, calc(100vw - 32px)); max-width: none; padding: 25px; border: 1px solid #b7c8bc; border-radius: 8px; background: #f2f6f1; color: #263b31; box-shadow: 0 20px 50px rgba(20, 33, 26, 0.2); }
+.speech-dialog::backdrop { background: rgba(18, 30, 24, 0.58); }
+.speech-dialog h2 { margin: 0 0 12px; font-size: 19px; }
+.speech-dialog p { margin: 0; font-size: 13px; line-height: 1.65; }
+.dialog-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 24px; }
+.dialog-actions button { min-height: 38px; padding: 7px 12px; border-radius: 6px; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; }
+.dialog-cancel { border: 1px solid #b7c8bc; background: transparent; color: #3d5647; }
+.dialog-confirm { border: 1px solid #315443; background: #315443; color: #f5faf5; }
+.dialog-actions button:focus-visible { outline: 2px solid #3c8c63; outline-offset: 2px; }
+
+@media (max-width: 720px) and (orientation: portrait) {
+  .app-shell { grid-template-rows: 54px minmax(0, 1fr); }
+  .topbar { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+  .brand-mark { width: 29px; height: 29px; }
+  .brand h1 { font-size: 13px; }
+  .brand div > span { display: none; }
+  .topbar { gap: 8px; }
+  .speedometer { gap: 5px; }
+  .speed-reading { min-width: 74px; gap: 3px; }
+  #speed-value { font-size: 25px; }
+  .speed-unit { font-size: 10px; }
+  .speed-meta { font-size: 9px; }
+  .session-start { width: 36px; height: 36px; min-height: 36px; padding: 0; }
+  #session-start-text { display: none; }
+  .stage { grid-template-columns: 1fr; }
+  .pane-top, .pane-bottom { padding: 11px max(16px, env(safe-area-inset-right)) 11px max(16px, env(safe-area-inset-left)); }
+  .pane h2 { font-size: 12px; }
+  .pane-state, .passenger-bottom { font-size: 10px; }
+  .scenario-button { width: 72px; min-height: 42px; padding: 6px 7px; font-size: 11px; }
+  .scenario-button svg { width: 14px; height: 14px; }
+  #speech-state { max-width: 90px; }
+}
+
+@media (max-width: 360px) {
+  .topbar { gap: 5px; padding: 0 12px; }
+  .brand { gap: 6px; }
+  .brand h1 { font-size: 12px; white-space: nowrap; }
+  .speedometer { gap: 3px; }
+  .speed-meta { font-size: 8px; }
+  .scenario-controls { gap: 5px; }
+  .scenario-button { width: 44px; gap: 0; padding: 6px; }
+  .scenario-button span { display: none; }
+  #speech-state { max-width: 64px; }
+}
+
+@media (max-width: 300px) {
+  .brand-mark { display: none; }
+}
+
+@media (max-height: 550px) and (orientation: landscape) {
+  .app-shell { grid-template-rows: 50px minmax(0, 1fr); }
+  .topbar { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+  #speed-value { font-size: 25px; }
+  .pane-top, .pane-bottom { padding: 8px max(16px, env(safe-area-inset-right)) 8px max(16px, env(safe-area-inset-left)); }
+  .scenario-button { width: 92px; min-height: 38px; padding: 6px 9px; }
+}

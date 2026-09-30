@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#16211d" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="동승 화면" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/app-icon.svg" type="image/svg+xml" />
+    <title>동승 화면 · 시제품</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <div>
+            <h1>동승 화면</h1>
+            <span>주행 실험</span>
+          </div>
+        </div>
+        <div id="speedometer" class="speedometer" data-state="off" aria-label="GPS 속도, 실험 기준 50킬로미터 매시">
+          <div class="speed-reading"><span id="speed-value">--</span><span class="speed-unit">km/h</span></div>
+          <div class="speed-meta"><span>GPS 속도</span><span id="speed-state" role="status">시작 전</span><span>실험 기준 50</span></div>
+        </div>
+        <button id="session-start" class="session-start" type="button" aria-label="기능 시작" title="기능 시작">
+          <i data-lucide="play" aria-hidden="true"></i>
+          <span id="session-start-text">기능 시작</span>
+        </button>
+      </header>
+
+      <div class="stage">
+        <section id="passenger-pane" class="passenger-pane pane" data-expression="neutral" data-speech="off" data-scenario="none" data-speeding="false" data-motion="unknown" aria-label="가상 동승자 화면">
+          <div id="scene" class="scene" aria-label="차량 조수석에 앉은 3D 가상 동승자"></div>
+          <div class="pane-top passenger-top">
+            <h2>가상 동승자</h2>
+            <span class="pane-state"><span class="state-dot"></span><span id="passenger-state-text">대기 중</span></span>
+          </div>
+          <div class="pane-bottom passenger-bottom">
+            <span id="speech-state" role="status">시작 전</span>
+            <div class="scenario-controls" role="group" aria-label="상황 시뮬레이션">
+              <button id="simulate-departure" class="scenario-button" type="button" aria-label="출발" title="출발 상황 시뮬레이션">
+                <i data-lucide="car-front" aria-hidden="true"></i><span>출발</span>
+              </button>
+              <button id="simulate-speeding" class="scenario-button" type="button" title="과속 상황 시뮬레이션">
+                <i data-lucide="gauge" aria-hidden="true"></i><span>과속</span>
+              </button>
+              <button id="simulate-braking" class="scenario-button" type="button" title="급정거 상황 시뮬레이션">
+                <i data-lucide="octagon-alert" aria-hidden="true"></i><span>급정거</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <dialog id="session-consent" class="speech-dialog" aria-labelledby="session-dialog-title">
+        <h2 id="session-dialog-title">시제품 시작</h2>
+        <p>위치 정보로 GPS 속도를 표시하고 마이크로 운전자의 말을 인식합니다. 브라우저가 음성을 외부 서비스로 보낼 수 있습니다. 이 시제품은 위치, 녹음, 인식된 문장을 저장하지 않습니다.</p>
+        <div class="dialog-actions">
+          <button id="session-cancel" class="dialog-cancel" type="button">나중에</button>
+          <button id="session-confirm" class="dialog-confirm" type="button">동의하고 시작</button>
+        </div>
+      </dialog>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
