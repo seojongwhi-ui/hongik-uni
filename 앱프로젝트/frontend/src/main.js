@@ -1,13 +1,14 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { CarFront, Gauge, OctagonAlert, Play, createIcons } from 'lucide';
+import { loadCuteAvatar } from './CuteAvatarController.js';
+import { CarFront, Gauge, OctagonAlert, Play, Route, createIcons } from 'lucide';
 import { setupSpeedometer } from './speedometer.js';
 import { reactionForUtterance } from './speechReactions.js';
 import { setupSpeechRecognition } from './speechRecognition.js';
+import { gazeCueAt } from './presenceMotion.js';
 import './style.css';
 
-createIcons({ icons: { CarFront, Gauge, OctagonAlert, Play } });
+createIcons({ icons: { CarFront, Gauge, OctagonAlert, Play, Route } });
 
 const sessionButton = document.getElementById('session-start');
 const sessionButtonText = document.getElementById('session-start-text');
@@ -38,29 +39,11 @@ renderer.toneMappingExposure = 1.3;
 host.appendChild(renderer.domElement);
 
 const mat = (color, roughness = 0.85) => new THREE.MeshStandardMaterial({ color, roughness });
-const passengerSkin = mat(0xc4a28b, 0.9);
-const passengerSkinShade = mat(0xaf8975, 0.95);
-const passengerJacket = mat(0x52695a, 0.9);
-const passengerShirt = mat(0xe3e3da, 0.92);
-const passengerHair = mat(0x332b28, 0.96);
-const eyeWhite = mat(0xf2f2eb, 0.85);
-const passengerIris = mat(0x29483d, 0.72);
-const cheek = mat(0xc58c84, 1);
 const seatMat = mat(0x505454);
 const seatSide = mat(0x2d3233);
 const seatSeam = mat(0x666c69);
 const cabin = mat(0x636a69);
 const trim = mat(0x252b2c);
-const belt = mat(0x8b9496);
-const faceInk = mat(0x2c4138);
-const avatarEyeWhite = mat(0xf6f4ee, 0.72);
-const avatarIris = mat(0x30453f, 0.66);
-const avatarNose = mat(0xb78470, 0.84);
-const avatarMouth = mat(0x87464b, 0.82);
-const driverSkin = mat(0xb9a28e);
-const driverShirt = mat(0x416066);
-const driverHair = mat(0x252728);
-const driverInk = mat(0x252d2b);
 const dashboardFront = mat(0x252c2c);
 const dashboardTop = mat(0x444d4b);
 
@@ -95,21 +78,6 @@ function strap(parent, material, from, to, width, depth) {
   return item;
 }
 
-function limb(parent, material, from, to, radius) {
-  const a = new THREE.Vector3(...from);
-  const b = new THREE.Vector3(...to);
-  const direction = new THREE.Vector3().subVectors(b, a);
-  const item = mesh(new THREE.CapsuleGeometry(radius, Math.max(0, direction.length() - 2 * radius), 8, 20), material, parent);
-  item.position.copy(a).add(b).multiplyScalar(0.5);
-  item.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.normalize());
-  return item;
-}
-
-function curvedLimb(parent, material, points, radius) {
-  const curve = new THREE.CatmullRomCurve3(points.map((point) => new THREE.Vector3(...point)));
-  return mesh(new THREE.TubeGeometry(curve, 20, radius, 12, false), material, parent);
-}
-
 function panel(parent, material, points, depth) {
   const shape = new THREE.Shape();
   shape.moveTo(...points[0]);
@@ -127,7 +95,7 @@ const cabinCenterX = 2.26;
 const windowFrame = mat(0x3b4649);
 const windowTrim = mat(0xaab4b2);
 const rearGlass = new THREE.MeshBasicMaterial({ color: 0xa6b9b8 });
-const sideGlass = new THREE.MeshBasicMaterial({ color: 0xd1d9d4 });
+const sideGlass = new THREE.MeshBasicMaterial({ color: 0xb8c9ca, side: THREE.DoubleSide });
 const glassDetail = new THREE.MeshBasicMaterial({ color: 0x93a9a8 });
 const pillarTrim = mat(0x91958d);
 const roofLiner = mat(0x353b3c);
@@ -167,32 +135,33 @@ for (const x of [-1.11, 3.47]) {
   ellipsoid(rearCabin, seatMat, [x, 1.69, -3.08], [0.43, 0.3, 0.24]);
 }
 
-panel(world, sideGlass, [[-3.35, 1.3], [-1.37, 1.3], [-1.52, 3.16], [-2.65, 3.47]], -3.85);
-panel(world, sideGlass, [[5.89, 1.3], [7.87, 1.3], [7.17, 3.47], [6.04, 3.16]], -3.85);
-box(world, roofLiner, [cabinCenterX, 3.87, -1.35], [14, 0.68, 5.9]);
+const ceiling = box(world, roofLiner, [cabinCenterX, 3.87, 2.5], [14, 0.68, 20]);
+ceiling.castShadow = false;
 box(world, trim, [0, -1.6, 1.15], [14, 0.34, 1.55]);
 box(world, cabin, [0, -1.83, 1.25], [14, 0.28, 1.45]);
 box(world, mat(0x454d4c), [0, -1.28, -2.2], [14, 0.35, 2.5]);
 
 for (const side of [-1, 1]) {
-  const x = cabinCenterX + side * 3.6;
-  const door = box(world, sidePanel, [x, -0.64, -2.23], [0.38, 1.3, 2.86]);
-  door.rotation.y = side * 0.12;
-  box(world, sideInset, [x - side * 0.2, -0.61, -2.25], [0.05, 0.56, 2.32]);
-  box(world, sideInset, [x - side * 0.12, 0.04, -1.84], [0.34, 0.14, 1.5]);
-  const innerX = cabinCenterX + side * 3.06;
-  const outerX = cabinCenterX + side * 5.72;
-  panel(world, sidePanel, [
-    [outerX, -1.6], [innerX, -1.6], [innerX, 0.78],
-    [innerX + side * 0.35, 1.05], [outerX, 1.34],
-  ], -2.4);
-  panel(world, sideInset, [
-    [outerX - side * 0.1, -1.16], [innerX + side * 0.18, -1.16],
-    [innerX + side * 0.18, 0.37], [outerX - side * 0.1, 0.58],
-  ], -2.37);
-  box(world, sideInset, [innerX + side * 0.67, 0.63, -2.25], [0.85, 0.12, 0.3]);
-  box(world, doorHandle, [innerX + side * 0.86, 0.43, -2.18], [0.4, 0.045, 0.06]);
-  strap(world, windowFrame, [x, 0.12, -3.3], [x + side * 0.15, 3.55, -3.48], 0.22, 0.31);
+  const door = new THREE.Group();
+  door.name = side < 0 ? 'closed-passenger-door' : 'closed-driver-door';
+  door.position.x = cabinCenterX + side * 2.65;
+  door.rotation.y = Math.PI / 2;
+  world.add(door);
+  const inside = -side;
+  box(door, sidePanel, [-0.575, 0.22, 0], [8.85, 2.56, 0.18]);
+  box(door, sideInset, [-0.575, 0.64, inside * 0.105], [8.55, 1.18, 0.055]);
+  panel(door, sideGlass, [[-4.91, 1.53], [3.76, 1.53], [3.76, 3.48], [-4.67, 3.48]], 0);
+  for (const [from, to] of [
+    [[-4.95, 1.5, 0], [3.85, 1.5, 0]],
+    [[-4.69, 3.5, 0], [3.85, 3.5, 0]],
+    [[-4.95, 1.5, 0], [-4.69, 3.5, 0]],
+    [[3.85, 1.5, 0], [3.85, 3.5, 0]],
+    [[1.65, 1.5, 0], [1.65, 3.5, 0]],
+  ]) strap(door, windowFrame, from, to, 0.12, 0.21);
+  box(door, trim, [0.1, 1.02, inside * 0.2], [1.8, 0.15, 0.38]);
+  box(door, sidePanel, [-0.22, 1.3, inside * 0.145], [0.64, 0.17, 0.055]);
+  box(door, doorHandle, [-0.22, 1.3, inside * 0.19], [0.4, 0.055, 0.055]);
+  box(door, trim, [1.65, 0.22, inside * 0.14], [0.026, 2.44, 0.015]);
 }
 strap(world, pillarTrim, [-1.19, 3.55, -3.48], [5.71, 3.55, -3.48], 0.16, 0.3);
 
@@ -200,10 +169,10 @@ box(world, seatSide, [cabinCenterX, 0.05, -0.19], [0.7, 0.46, 1.56]);
 ellipsoid(world, seatMat, [cabinCenterX, 0.33, -0.24], [0.35, 0.13, 0.61]);
 
 // The foreground dashboard gives the mounted display its front-cabin point of view.
-box(world, dashboardFront, [cabinCenterX, -0.5, 1.55], [12.4, 2.5, 0.48]);
-box(world, dashboardTop, [cabinCenterX, 0.79, 1.48], [12.2, 0.16, 0.72]);
+box(world, dashboardFront, [cabinCenterX, -4.11, 1.55], [12.4, 10, 0.48]);
+box(world, dashboardTop, [cabinCenterX, 0.93, 1.48], [12.2, 0.16, 0.72]);
 box(world, dashboardFront, [cabinCenterX, 0.6, 1.82], [0.92, 0.5, 0.58]);
-box(world, dashboardTop, [cabinCenterX, 0.89, 1.78], [1.02, 0.12, 0.7]);
+box(world, dashboardTop, [cabinCenterX, 1.03, 1.78], [1.02, 0.12, 0.7]);
 
 function makeFrontSeat(parent, x = 0, occupied = false) {
   const seat = new THREE.Group();
@@ -229,245 +198,128 @@ function makeFrontSeat(parent, x = 0, occupied = false) {
 }
 
 const passenger = new THREE.Group();
-passenger.position.x = 1.18;
+const passengerDisplayX = 1.18;
+passenger.position.x = passengerDisplayX;
 world.add(passenger);
 makeFrontSeat(passenger, 0, true);
-const driverSeat = makeFrontSeat(world, 3.52, true);
 
-const steeringWheel = mesh(new THREE.TorusGeometry(0.72, 0.1, 12, 48), trim, world, [3.64, 1.12, 1.25]);
-steeringWheel.rotation.y = -0.25;
+let avatarController = null;
+let updateAvatarBelt = null;
+let lastDisplayedSpeed = 0;
 
-const person = new THREE.Group();
-passenger.add(person);
-const passengerBodyProfile = [
-  [0, 0.3], [0.34, 0.3], [0.47, 0.42], [0.51, 0.7],
-  [0.47, 1.02], [0.52, 1.25], [0.62, 1.46], [0.58, 1.62], [0.4, 1.76], [0, 1.79],
-];
-const driverBodyProfile = [
-  [0, 0.3], [0.27, 0.3], [0.39, 0.42], [0.43, 0.7],
-  [0.42, 1.08], [0.51, 1.42], [0.49, 1.61], [0.32, 1.76], [0, 1.81],
-];
-const passengerBody = mesh(
-  new THREE.LatheGeometry(passengerBodyProfile.map(([radius, height]) => new THREE.Vector2(radius, height)), 48),
-  passengerJacket,
-  person,
-  [0, 0, 0.03],
-  [1.06, 1, 0.76],
-);
-passengerBody.geometry.computeVertexNormals();
-ellipsoid(person, passengerJacket, [0, 0.44, 0.12], [0.51, 0.25, 0.37]);
-ellipsoid(person, passengerSkin, [0, 1.79, -0.005], [0.145, 0.17, 0.13]);
-panel(person, passengerShirt, [[-0.2, 1.64], [-0.02, 1.51], [-0.02, 1.7]], 0.47);
-panel(person, passengerShirt, [[0.2, 1.64], [0.02, 1.51], [0.02, 1.7]], 0.47);
-
-for (const side of [-1, 1]) {
-  const shoulder = [side * 0.54, 1.48, 0.07];
-  const elbow = [side * 0.67, 1.17, 0.23];
-  const wrist = [side * 0.53, 0.84, 0.4];
-  ellipsoid(person, passengerJacket, shoulder, [0.17, 0.18, 0.16]);
-  curvedLimb(person, passengerJacket, [shoulder, elbow, wrist], 0.135);
-  ellipsoid(person, passengerSkin, [side * 0.5, 0.76, 0.46], [0.105, 0.1, 0.075]);
-}
-
-strap(person, belt, [0.48, 1.64, 0.4], [-0.42, 0.72, 0.48], 0.06, 0.025);
-box(person, trim, [-0.42, 0.72, 0.5], [0.14, 0.1, 0.06]);
-
-const head = new THREE.Group();
-head.position.set(0, 2.18, 0.1);
-person.add(head);
-ellipsoid(head, passengerSkin, [0, 0, 0], [0.435, 0.48, 0.42]);
-ellipsoid(head, passengerSkinShade, [-0.405, -0.01, -0.015], [0.055, 0.1, 0.045]);
-ellipsoid(head, passengerSkinShade, [0.405, -0.01, -0.015], [0.055, 0.1, 0.045]);
-ellipsoid(head, passengerHair, [0, 0.31, -0.065], [0.44, 0.18, 0.38]);
-const hairline = new THREE.Shape();
-hairline.moveTo(-0.39, 0.2);
-hairline.lineTo(-0.37, 0.31);
-hairline.quadraticCurveTo(-0.2, 0.43, 0, 0.38);
-hairline.quadraticCurveTo(0.21, 0.43, 0.38, 0.3);
-hairline.lineTo(0.39, 0.19);
-hairline.quadraticCurveTo(0.25, 0.15, 0.13, 0.2);
-hairline.quadraticCurveTo(0, 0.14, -0.13, 0.2);
-hairline.quadraticCurveTo(-0.27, 0.15, -0.39, 0.2);
-const fringe = mesh(new THREE.ShapeGeometry(hairline), passengerHair, head, [0, 0, 0.424]);
-fringe.castShadow = false;
-ellipsoid(head, passengerHair, [-0.385, 0.13, 0.06], [0.052, 0.16, 0.1]);
-ellipsoid(head, passengerHair, [0.385, 0.13, 0.06], [0.052, 0.16, 0.1]);
-
-const eyes = [];
-const brows = [];
-for (const side of [-1, 1]) {
-  const eye = new THREE.Group();
-  eye.position.set(side * 0.145, 0.055, 0.397);
-  ellipsoid(eye, eyeWhite, [0, 0, -0.004], [0.064, 0.055, 0.016]);
-  ellipsoid(eye, passengerIris, [0, -0.002, 0.013], [0.03, 0.04, 0.013]);
-  head.add(eye);
-  eyes.push(eye);
-
-  const brow = new THREE.Group();
-  brow.position.set(side * 0.145, 0.2, 0.39);
-  limb(brow, passengerHair, [-0.065, 0, 0], [0.065, 0, 0], 0.013);
-  head.add(brow);
-  brows.push(brow);
-}
-ellipsoid(head, passengerSkinShade, [0, -0.07, 0.414], [0.04, 0.058, 0.045]);
-ellipsoid(head, cheek, [-0.245, -0.12, 0.39], [0.055, 0.03, 0.01]);
-ellipsoid(head, cheek, [0.245, -0.12, 0.39], [0.055, 0.03, 0.01]);
-
-function mouthLine(points) {
-  const curve = new THREE.CatmullRomCurve3(points.map((point) => new THREE.Vector3(...point)));
-  return mesh(new THREE.TubeGeometry(curve, 16, 0.013, 8, false), faceInk, head);
-}
-
-const mouths = {
-  neutral: mouthLine([[-0.105, -0.205, 0.422], [0, -0.205, 0.43], [0.105, -0.205, 0.422]]),
-  attentive: ellipsoid(head, faceInk, [0, -0.207, 0.429], [0.047, 0.061, 0.016]),
-  concerned: mouthLine([[-0.12, -0.235, 0.405], [0, -0.17, 0.44], [0.12, -0.235, 0.405]]),
-  surprised: mesh(new THREE.TorusGeometry(0.069, 0.013, 10, 32), faceInk, head, [0, -0.25, 0.46], [1, 1.18, 1]),
-  warm: mouthLine([[-0.14, -0.17, 0.41], [0, -0.235, 0.425], [0.14, -0.17, 0.41]]),
-};
-
-function addAvatarFace(avatar, headBone) {
-  const headMesh = avatar.getObjectByName('Casual_Head_1');
-  if (!headMesh || !headBone) return;
-
-  avatar.updateMatrixWorld(true);
-  const headBounds = new THREE.Box3().setFromObject(headMesh);
-  const center = headBounds.getCenter(new THREE.Vector3());
-  const headSize = headBounds.getSize(new THREE.Vector3());
-  const face = new THREE.Group();
-  const faceCenter = new THREE.Vector3(
-    center.x,
-    center.y + headSize.y * 0.03,
-    headBounds.max.z + 0.012,
-  );
-  face.position.copy(headBone.worldToLocal(faceCenter));
-  face.scale.setScalar(0.00082);
-  face.name = 'passenger-face-features';
-  headBone.add(face);
-
-  for (const side of [-1, 1]) {
-    ellipsoid(face, avatarEyeWhite, [side * 0.2, 0.015, 0], [0.115, 0.072, 0.021]);
-    ellipsoid(face, avatarIris, [side * 0.2, 0.01, 0.024], [0.038, 0.046, 0.015]);
-    limb(face, passengerHair, [side * 0.36, 0.22, 0.035], [side * 0.13, 0.195, 0.04], 0.012);
+function attachAvatarBelt(avatar) {
+  const bodyRoot = avatar.getObjectByName('AvatarRoot') || avatar;
+  const webbing = mat(0x242a29, 0.94);
+  webbing.side = THREE.DoubleSide;
+  const count = 40;
+  const vertices = new Float32Array((count + 1) * 2 * 3);
+  const indices = [];
+  for (let index = 0; index < count; index++) {
+    const base = index * 2;
+    indices.push(base, base + 1, base + 2, base + 1, base + 3, base + 2);
   }
-  ellipsoid(face, avatarNose, [0, -0.09, 0.028], [0.075, 0.105, 0.055]);
-  limb(face, avatarMouth, [-0.15, -0.54, 0.035], [0.15, -0.54, 0.035], 0.018);
-}
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3));
+  geometry.setIndex(indices);
+  const ribbon = mesh(geometry, webbing, passenger);
+  ribbon.castShadow = false;
+  box(passenger, trim, [-0.65, 1.99, -0.24], [0.12, 0.24, 0.12]);
+  box(passenger, mat(0x9a4544), [0.6, 0.58, 0.3], [0.14, 0.14, 0.18]);
 
-const passengerAvatar = new THREE.Group();
-passenger.add(passengerAvatar);
-const passengerBones = {};
-const passengerPoseRotations = {};
-let passengerAvatarReady = false;
-
-new GLTFLoader().load('/models/passenger-casual.glb', (gltf) => {
-  const avatar = gltf.scene;
-  avatar.name = 'rigged-passenger';
-  avatar.position.set(0, -1.28, -0.28);
-  avatar.scale.setScalar(2.08);
-  avatar.traverse((item) => {
-    if (item.isMesh) {
-      if (item.name === 'Casual_Head_4') item.visible = false;
-      item.castShadow = true;
-      item.receiveShadow = true;
+  const torsoPoints = [
+    [-0.38, 1.76, 0.18], [-0.25, 1.47, 0.24],
+    [0.04, 1.18, 0.28], [0.3, 0.91, 0.28],
+  ];
+  return () => {
+    passenger.updateWorldMatrix(true, false);
+    bodyRoot.updateWorldMatrix(true, false);
+    const points = [new THREE.Vector3(-0.65, 1.99, -0.24)];
+    for (const coordinates of torsoPoints) {
+      points.push(passenger.worldToLocal(bodyRoot.localToWorld(new THREE.Vector3(...coordinates))));
     }
-    if (item.isBone) passengerBones[item.name] = item;
-  });
-
-  const bendBone = (name, angle) => passengerBones[name]?.rotateX(angle);
-
-  // Keep the model seated with both knees oriented toward the footwell.
-  bendBone('UpperLegL', -0.9);
-  bendBone('UpperLegR', -0.9);
-  bendBone('LowerLegL', 0.95);
-  bendBone('LowerLegR', 0.95);
-  passengerBones.UpperLegL?.rotateZ(0.7);
-  passengerBones.UpperLegR?.rotateZ(0.3);
-  bendBone('UpperArmL', -0.3);
-  bendBone('UpperArmR', -0.3);
-  passengerBones.UpperArmL?.rotateZ(-0.35);
-  passengerBones.LowerArmL?.rotateZ(-0.25);
-  passengerBones.UpperArmR?.rotateZ(0.25);
-  passengerBones.LowerArmR?.rotateZ(0.15);
-
-  addAvatarFace(avatar, passengerBones.Head);
-
-  for (const name of ['Head', 'Chest']) {
-    if (passengerBones[name]) passengerPoseRotations[name] = passengerBones[name].rotation.clone();
-  }
-  passengerAvatar.add(avatar);
-  person.visible = false;
-  passengerAvatarReady = true;
-}, undefined, () => {
-  // Keep the procedural passenger visible if the bundled model cannot load.
-  passengerAvatarReady = false;
-});
-
-// Mirror the driver-side belt geometry for the passenger seat.
-strap(passenger, belt, [-0.45, 1.64, 0.39], [0.43, 0.38, 0.49], 0.06, 0.024);
-
-const driver = new THREE.Group();
-driver.position.set(3.52, 0, -0.02);
-world.add(driver);
-const driverBody = mesh(
-  new THREE.LatheGeometry(driverBodyProfile.map(([radius, height]) => new THREE.Vector2(radius, height)), 40),
-  driverShirt,
-  driver,
-  [0, 0, 0.04],
-  [1.12, 1, 0.82],
-);
-driverBody.geometry.computeVertexNormals();
-ellipsoid(driver, driverShirt, [0, 0.36, 0.15], [0.52, 0.26, 0.41]);
-strap(driver, belt, [0.45, 1.64, 0.39], [-0.43, 0.38, 0.49], 0.06, 0.024);
-
-const driverArmPoints = [
-  [[-0.45, 1.48, 0.08], [-0.62, 1.28, 0.42], [-0.48, 1.2, 1.03]],
-  [[0.45, 1.48, 0.08], [0.65, 1.28, 0.42], [0.72, 1.2, 1.03]],
-];
-for (const [shoulder, elbow, wrist] of driverArmPoints) {
-  ellipsoid(driver, driverShirt, shoulder, [0.16, 0.18, 0.16]);
-  limb(driver, driverShirt, shoulder, elbow, 0.13);
-  ellipsoid(driver, driverShirt, elbow, [0.13, 0.13, 0.13]);
-  limb(driver, driverSkin, elbow, wrist, 0.105);
-  ellipsoid(driver, driverSkin, wrist, [0.14, 0.16, 0.14]);
+    points.push(new THREE.Vector3(0.6, 0.58, 0.3));
+    const curve = new THREE.CatmullRomCurve3(points);
+    for (let index = 0; index <= count; index++) {
+      const point = curve.getPoint(index / count);
+      const tangent = curve.getTangent(index / count);
+      const across = new THREE.Vector3(-tangent.y, tangent.x, 0).normalize().multiplyScalar(0.043);
+      const offset = index * 6;
+      vertices.set([point.x - across.x, point.y - across.y, point.z - across.z,
+        point.x + across.x, point.y + across.y, point.z + across.z], offset);
+    }
+    geometry.attributes.position.needsUpdate = true;
+    geometry.computeVertexNormals();
+    geometry.computeBoundingSphere();
+  };
 }
-
-const driverHead = new THREE.Group();
-driverHead.position.set(0, 2.2, 0.12);
-driver.add(driverHead);
-ellipsoid(driverHead, driverSkin, [0, 0, 0], [0.44, 0.46, 0.44]);
-ellipsoid(driverHead, driverHair, [0, 0.25, -0.035], [0.45, 0.24, 0.43]);
-for (const side of [-1, 1]) {
-  ellipsoid(driverHead, driverInk, [side * 0.14, 0.055, 0.414], [0.035, 0.047, 0.018]);
-  limb(driverHead, driverHair, [side * 0.205, 0.17, 0.39], [side * 0.075, 0.18, 0.415], 0.011);
-}
-ellipsoid(driverHead, driverSkin, [0, -0.065, 0.435], [0.04, 0.06, 0.05]);
-const driverMouthCurve = new THREE.CatmullRomCurve3([
-  new THREE.Vector3(-0.09, -0.2, 0.405),
-  new THREE.Vector3(0, -0.21, 0.422),
-  new THREE.Vector3(0.09, -0.2, 0.405),
-]);
-mesh(new THREE.TubeGeometry(driverMouthCurve, 12, 0.011, 8, false), driverInk, driverHead);
 
 const passengerPane = document.getElementById('passenger-pane');
 const passengerState = document.getElementById('passenger-state-text');
+const query = new URLSearchParams(window.location.search);
+const enhancedReactions = query.get('reaction') !== 'subtle';
+// In the front-facing cabin view, the real driver's side is the right edge.
+const driverGazeDirection = query.get('driver') === 'left' ? -1 : 1;
+const dangerFlash = document.getElementById('danger-flash');
+const driveButton = document.getElementById('simulate-drive');
+const driveButtonText = document.getElementById('simulate-drive-text');
+const simulationBanner = document.getElementById('simulation-banner');
+const simulationEvent = document.getElementById('simulation-event');
+const simulationStep = document.getElementById('simulation-step');
+const simulationProgress = document.getElementById('simulation-progress-value');
 let expression = 'neutral';
 let expressionExpiresAt = Infinity;
 let scenario = 'none';
-let scenarioStartedAt = 0;
 let scenarioExpiresAt = 0;
 let liveSpeeding = false;
 let vehicleMoving = null;
 let departureStartedAt = -Infinity;
+let driveSimulationStartedAt = -Infinity;
+let driveSimulationFrame = null;
+let driveSimulationStep = -1;
+let dangerFlashTimer = null;
+let speakingTimer = null;
+let greetingTimer = null;
+let greetingPlayed = false;
+let greetingActive = false;
+let sessionActive = false;
+const GREETING_TEXT = '안녕, 오늘도 같이 가자.';
 const PROTOTYPE_SPEED_THRESHOLD_KMH = 50;
 const DEPARTURE_START_KMH = 3;
 const DEPARTURE_STOP_KMH = 1;
 const DEPARTURE_EFFECT_MS = 1300;
+const DRIVE_SIMULATION_DURATION_MS = 25000;
+const DRIVE_SEQUENCE = [
+  { at: 0, speed: 0, event: '출발 준비', expression: 'attentive', motion: 'departure' },
+  { at: 900, speed: 24, event: '출발 및 도심 진입', expression: 'neutral' },
+  { at: 3500, speed: 38, event: '운전자 욕설 감지', expression: 'concerned', scenario: 'profanity' },
+  { at: 6500, speed: 43, event: '안정 주행', expression: 'warm' },
+  { at: 9000, speed: 58, event: '제한속도 초과', expression: 'concerned', scenario: 'speeding' },
+  { at: 12500, speed: 44, event: '전방 주시 이탈', expression: 'attentive', scenario: 'distraction' },
+  { at: 15500, speed: 41, event: '옆 차량 끼어들기', expression: 'surprised', scenario: 'swerving' },
+  { at: 18000, speed: 7, event: '돌발 상황 · 급정거', expression: 'surprised', scenario: 'braking' },
+  { at: 21500, speed: 30, event: '상황 회복 및 재출발', expression: 'warm', motion: 'departure' },
+  { at: 24000, speed: 0, event: '주행 종료', expression: 'neutral' },
+];
+
+function triggerDangerFlash() {
+  if (!enhancedReactions) return;
+  clearTimeout(dangerFlashTimer);
+  dangerFlash.classList.remove('is-active');
+  void dangerFlash.offsetWidth;
+  dangerFlash.classList.add('is-active');
+  dangerFlashTimer = setTimeout(() => dangerFlash.classList.remove('is-active'), 1250);
+}
+
+function clearDangerFlash() {
+  clearTimeout(dangerFlashTimer);
+  dangerFlash.classList.remove('is-active');
+}
 
 function setExpression(next) {
   expression = next;
-  for (const [name, mouth] of Object.entries(mouths)) mouth.visible = name === next;
+  avatarController?.setEmotion(next === 'warm' ? 'happy' : next === 'neutral' ? 'calm' : next);
   passengerPane.dataset.expression = next;
+  if (next !== 'surprised' && scenario !== 'braking' && scenario !== 'swerving') clearDangerFlash();
   if (scenario === 'none') passengerState.textContent = next === 'neutral' ? '대기 중' : '반응 중';
   expressionExpiresAt = next === 'neutral' ? Infinity : performance.now() + 4500;
 }
@@ -484,9 +336,12 @@ function applyLiveSpeedReaction() {
 function triggerDepartureJolt() {
   departureStartedAt = performance.now();
   passengerPane.dataset.motion = 'departure';
+  avatarController?.react('departure');
 }
 
 function updateLiveSpeed(displayedSpeed) {
+  lastDisplayedSpeed = displayedSpeed ?? 0;
+  avatarController?.setSpeed(lastDisplayedSpeed);
   if (displayedSpeed !== null) {
     if (vehicleMoving === null) {
       vehicleMoving = displayedSpeed >= DEPARTURE_START_KMH;
@@ -506,25 +361,114 @@ function updateLiveSpeed(displayedSpeed) {
   applyLiveSpeedReaction();
 }
 
-function simulateScenario(next) {
+function simulateScenario(next, duration = 4500, label = null) {
   scenario = next;
-  scenarioStartedAt = performance.now();
-  scenarioExpiresAt = scenarioStartedAt + 4500;
+  scenarioExpiresAt = performance.now() + duration;
   passengerPane.dataset.scenario = next;
-  setExpression(next === 'speeding' ? 'concerned' : 'surprised');
-  passengerState.textContent = next === 'speeding' ? '과속 시뮬레이션' : '급정거 시뮬레이션';
+  const reaction = next === 'speeding' || next === 'profanity' ? 'concerned'
+    : next === 'distraction' ? 'attentive' : 'surprised';
+  setExpression(reaction);
+  if (next === 'braking' || next === 'swerving') {
+    avatarController?.react('brake');
+    triggerDangerFlash();
+  }
+  passengerState.textContent = label ?? (next === 'speeding' ? '과속 시뮬레이션' : '급정거 시뮬레이션');
 }
 
-document.getElementById('simulate-departure').addEventListener('click', triggerDepartureJolt);
-document.getElementById('simulate-speeding').addEventListener('click', () => simulateScenario('speeding'));
-document.getElementById('simulate-braking').addEventListener('click', () => simulateScenario('braking'));
+function applyDriveStep(step, index) {
+  driveSimulationStep = index;
+  speedometer.setSimulatedSpeed(step.speed);
+  if (step.motion === 'departure') triggerDepartureJolt();
+  scenario = step.scenario ?? 'none';
+  scenarioExpiresAt = Infinity;
+  passengerPane.dataset.scenario = scenario;
+  setExpression(step.expression);
+  if (step.scenario === 'braking' || step.scenario === 'swerving') {
+    avatarController?.react('brake');
+    triggerDangerFlash();
+  }
+  expressionExpiresAt = Infinity;
+  passengerState.textContent = step.event;
+  simulationEvent.textContent = step.event;
+  simulationStep.textContent = `${index + 1} / ${DRIVE_SEQUENCE.length}`;
+}
+
+function finishDriveSimulation(cancelled = false) {
+  if (driveSimulationFrame !== null) cancelAnimationFrame(driveSimulationFrame);
+  driveSimulationFrame = null;
+  driveSimulationStartedAt = -Infinity;
+  driveSimulationStep = -1;
+  driveButton.setAttribute('aria-pressed', 'false');
+  driveButtonText.textContent = '자동 주행';
+  passengerPane.dataset.autoSimulation = 'false';
+  simulationBanner.hidden = true;
+  scenario = 'none';
+  passengerPane.dataset.scenario = 'none';
+  speedometer.clearSimulatedSpeed();
+  setExpression('neutral');
+  passengerState.textContent = cancelled ? '시뮬레이션 중지' : '주행 완료';
+}
+
+function updateDriveSimulation(now) {
+  const elapsed = now - driveSimulationStartedAt;
+  const nextIndex = DRIVE_SEQUENCE.findLastIndex((step) => elapsed >= step.at);
+  if (nextIndex !== driveSimulationStep && nextIndex >= 0) applyDriveStep(DRIVE_SEQUENCE[nextIndex], nextIndex);
+  simulationProgress.style.width = `${Math.min(100, elapsed / DRIVE_SIMULATION_DURATION_MS * 100)}%`;
+  if (elapsed >= DRIVE_SIMULATION_DURATION_MS) {
+    finishDriveSimulation(false);
+    return;
+  }
+  driveSimulationFrame = requestAnimationFrame(updateDriveSimulation);
+}
+
+function startDriveSimulation() {
+  if (driveSimulationFrame !== null) {
+    finishDriveSimulation(true);
+    return;
+  }
+  driveSimulationStartedAt = performance.now();
+  driveButton.setAttribute('aria-pressed', 'true');
+  driveButtonText.textContent = '주행 중지';
+  passengerPane.dataset.autoSimulation = 'true';
+  simulationBanner.hidden = false;
+  simulationProgress.style.width = '0%';
+  applyDriveStep(DRIVE_SEQUENCE[0], 0);
+  driveSimulationFrame = requestAnimationFrame(updateDriveSimulation);
+}
+
+function stopAutoBeforeManual() {
+  if (driveSimulationFrame !== null) finishDriveSimulation(true);
+}
+
+driveButton.addEventListener('click', startDriveSimulation);
+document.getElementById('simulate-departure').addEventListener('click', () => {
+  stopAutoBeforeManual();
+  triggerDepartureJolt();
+});
+document.getElementById('simulate-speeding').addEventListener('click', () => {
+  stopAutoBeforeManual();
+  simulateScenario('speeding');
+});
+document.getElementById('simulate-braking').addEventListener('click', () => {
+  stopAutoBeforeManual();
+  simulateScenario('braking');
+});
 
 setExpression('neutral');
 const speechRecognition = setupSpeechRecognition({
   onUtterance: (transcript) => {
-    if (scenario === 'none' && !liveSpeeding) setExpression(reactionForUtterance(transcript));
+    avatarController?.setSpeaking(true);
+    clearTimeout(speakingTimer);
+    speakingTimer = setTimeout(() => avatarController?.setSpeaking(false), 700);
+    if (scenario === 'none' && !liveSpeeding) {
+      const reaction = reactionForUtterance(transcript);
+      setExpression(reaction);
+      if (reaction === 'surprised') triggerDangerFlash();
+    }
   },
   onStop: () => {
+    clearTimeout(speakingTimer);
+    avatarController?.setSpeaking(false);
     if (scenario === 'none' && !liveSpeeding) setExpression('neutral');
   },
   onNeedsAttention: showReconnect,
@@ -536,9 +480,49 @@ function startSession() {
     return;
   }
   if (document.hidden) return;
+  sessionActive = true;
   sessionButton.hidden = true;
   speedometer.start();
-  speechRecognition.start();
+  if (!greetingPlayed) {
+    greetingPlayed = true;
+    greetPassenger();
+  } else if (!greetingActive) speechRecognition.start();
+}
+
+function finishGreeting() {
+  if (!greetingActive) return;
+  greetingActive = false;
+  clearTimeout(greetingTimer);
+  avatarController?.setSpeaking(false);
+  if (passengerState.textContent === GREETING_TEXT && scenario === 'none' && !liveSpeeding) {
+    setExpression('neutral');
+  }
+  if (sessionActive && !document.hidden) speechRecognition.start();
+}
+
+function greetPassenger() {
+  greetingActive = true;
+  setExpression('warm');
+  passengerState.textContent = GREETING_TEXT;
+  if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
+    greetingTimer = setTimeout(finishGreeting, 2800);
+    return;
+  }
+  const utterance = new SpeechSynthesisUtterance(GREETING_TEXT);
+  utterance.lang = 'ko-KR';
+  utterance.rate = 0.95;
+  utterance.onstart = () => avatarController?.setSpeaking(true);
+  utterance.onend = finishGreeting;
+  utterance.onerror = finishGreeting;
+  greetingTimer = setTimeout(() => {
+    window.speechSynthesis.cancel();
+    finishGreeting();
+  }, 6000);
+  try {
+    window.speechSynthesis.speak(utterance);
+  } catch {
+    finishGreeting();
+  }
 }
 
 sessionButton.addEventListener('click', startSession);
@@ -552,6 +536,11 @@ consent.showModal();
 
 function pauseSession() {
   if (!sessionApproved) return;
+  sessionActive = false;
+  if (greetingActive) {
+    window.speechSynthesis?.cancel();
+    finishGreeting();
+  }
   speedometer.stop();
   speechRecognition.stop();
 }
@@ -565,7 +554,9 @@ document.addEventListener('visibilitychange', () => {
 const leftLight = new THREE.DirectionalLight(0xffe7cb, 2.6);
 leftLight.position.set(-3, 5, 4);
 leftLight.castShadow = true;
-leftLight.shadow.mapSize.set(1024, 1024);
+leftLight.shadow.mapSize.set(2048, 2048);
+leftLight.shadow.normalBias = 0.025;
+leftLight.shadow.bias = -0.0001;
 leftLight.shadow.camera.left = -5;
 leftLight.shadow.camera.right = 5;
 leftLight.shadow.camera.top = 5;
@@ -592,13 +583,12 @@ function resize() {
   const height = host.clientHeight;
   const ratio = width / height;
   const narrowPortrait = ratio < 0.75;
-  driverSeat.position.x = narrowPortrait ? 3.05 : 3.52;
-  driver.position.x = narrowPortrait ? 3.05 : 3.52;
-  steeringWheel.position.x = narrowPortrait ? 3.17 : 3.64;
-  camera.fov = ratio < 1 ? 50 : ratio < 1.35 ? 45 : 42;
-  const focusX = narrowPortrait ? 2.05 : 2.2;
-  camera.position.set(focusX, 2.15, ratio < 1 ? 7.2 : ratio < 1.35 ? 6.0 : 5.8);
-  controls.target.set(focusX, 1.35, 0);
+  camera.fov = ratio < 1 ? 49 : ratio < 1.35 ? 43 : 39;
+  const targetX = narrowPortrait ? 1.35 : 1.5;
+  const cameraX = narrowPortrait ? 2.18 : 2.45;
+  const distance = ratio < 0.75 ? 6.6 : ratio < 1 ? 5.8 : ratio < 1.35 ? 5.2 : 4.9;
+  camera.position.set(cameraX, 2.32, distance);
+  controls.target.set(targetX, 1.52, 0);
   camera.aspect = ratio;
   camera.updateProjectionMatrix();
   controls.update();
@@ -610,7 +600,22 @@ resize();
 
 const clock = new THREE.Clock();
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const presenceStartedAt = performance.now();
 let lastTime = 0;
+
+loadCuteAvatar(passenger, {
+  position: [0, -0.21, -0.05], polish: query.get('appearance') !== 'original',
+}).then((controller) => {
+  avatarController = controller;
+  controller.setReactionIntensity(enhancedReactions ? 1 : 0.45);
+  controller.setSpeed(lastDisplayedSpeed);
+  controller.setEmotion(expression === 'warm' ? 'happy' : expression === 'neutral' ? 'calm' : expression);
+  updateAvatarBelt = attachAvatarBelt(controller.avatar);
+  passengerPane.dataset.model = 'ready';
+}).catch((error) => {
+  passengerPane.dataset.model = 'error';
+  console.error('Failed to load passenger avatar', error);
+});
 
 function animate() {
   const t = clock.getElapsedTime();
@@ -628,68 +633,21 @@ function animate() {
     applyLiveSpeedReaction();
   } else if (now > expressionExpiresAt) setExpression('neutral');
 
-  const browAngle = expression === 'concerned' ? 0.28 : expression === 'warm' ? -0.1 : 0;
-  brows[0].rotation.z = THREE.MathUtils.damp(brows[0].rotation.z, browAngle, 7, delta);
-  brows[1].rotation.z = THREE.MathUtils.damp(brows[1].rotation.z, -browAngle, 7, delta);
-  const browHeight = expression === 'surprised' ? 0.28 : 0.2;
-  for (const brow of brows) brow.position.y = THREE.MathUtils.damp(brow.position.y, browHeight, 7, delta);
-  const eyeHeight = expression === 'surprised' ? 1.5 : expression === 'warm' ? 0.7 : expression === 'concerned' || expression === 'attentive' ? 1.1 : 1;
-  const eyeWidth = expression === 'surprised' ? 1.25 : 1;
-  const blink = !reducedMotion.matches && Math.abs(Math.sin(t * 0.83)) > 0.996 ? 0.12 : 1;
-  for (const eye of eyes) {
-    eye.scale.x = THREE.MathUtils.damp(eye.scale.x, eyeWidth, 15, delta);
-    eye.scale.y = THREE.MathUtils.damp(eye.scale.y, eyeHeight * blink, 15, delta);
-  }
+  const presenceElapsed = now - presenceStartedAt;
+  const gazeCue = gazeCueAt(presenceElapsed);
+  const reactionAttention = expression === 'concerned' || expression === 'surprised'
+    || expression === 'attentive';
+  const eyeAttention = reactionAttention ? 1 : gazeCue.eyeAttention;
+  const headAttention = reactionAttention ? 1 : gazeCue.headAttention;
+  avatarController?.setGaze(eyeAttention, headAttention, driverGazeDirection);
+  avatarController?.update(delta, { elapsedMs: presenceElapsed, reducedMotion: reducedMotion.matches });
 
   if (!reducedMotion.matches) {
     const departureWave = departureActive ? Math.sin(departureAge * 25) * Math.exp(-departureAge * 3.2) : 0;
-    const departureLean = departureActive && departureAge < 0.55
-      ? Math.sin(Math.PI * departureAge / 0.55) * Math.exp(-departureAge * 0.8)
-      : 0;
     world.position.y = THREE.MathUtils.damp(world.position.y, departureWave * 0.065, 18, delta);
     world.rotation.z = THREE.MathUtils.damp(world.rotation.z, departureWave * 0.0045, 18, delta);
-    person.position.y = Math.sin(t * 1.6) * 0.018;
-    person.rotation.z = Math.sin(t * 0.7) * 0.012;
-    passengerAvatar.position.copy(person.position);
-    passengerAvatar.rotation.copy(person.rotation);
-    driver.position.y = Math.sin(t * 1.45 + 0.8) * 0.012;
-    driverHead.rotation.y = Math.sin(t * 0.38) * 0.025;
-    driverHead.rotation.z = Math.sin(t * 0.52 + 0.4) * 0.008;
-    const eventAge = (now - scenarioStartedAt) / 1000;
-    const brakePulse = scenario === 'braking' && eventAge < 1.3 ? Math.sin(Math.PI * eventAge / 1.3) : 0;
-    person.rotation.x = THREE.MathUtils.damp(person.rotation.x, brakePulse * 0.14 - (scenario === 'speeding' ? 0.035 : 0) - departureLean * 0.08, 9, delta);
-    driver.rotation.x = THREE.MathUtils.damp(driver.rotation.x, -departureLean * 0.055, 9, delta);
-    person.position.z = THREE.MathUtils.damp(person.position.z, brakePulse * 0.07, 9, delta);
-    const turn = expression === 'neutral' ? -0.1 : -0.26;
-    const tilt = expression === 'concerned' ? 0.1 : expression === 'warm' ? -0.05 : 0;
-    head.rotation.y = THREE.MathUtils.damp(head.rotation.y, turn + Math.sin(t * 0.48) * 0.05, 4, delta);
-    head.rotation.z = THREE.MathUtils.damp(head.rotation.z, tilt + Math.sin(t * 0.65) * 0.012, 4, delta);
-    head.rotation.x = THREE.MathUtils.damp(head.rotation.x, expression === 'surprised' ? -0.12 : 0, 5, delta);
-    if (passengerAvatarReady) {
-      const avatarHead = passengerBones.Head;
-      const avatarChest = passengerBones.Chest;
-      const headPose = passengerPoseRotations.Head;
-      const chestPose = passengerPoseRotations.Chest;
-      if (avatarHead && headPose) {
-        avatarHead.rotation.y = THREE.MathUtils.damp(avatarHead.rotation.y, headPose.y + turn * 0.7, 4, delta);
-        avatarHead.rotation.z = THREE.MathUtils.damp(avatarHead.rotation.z, headPose.z + tilt, 4, delta);
-        avatarHead.rotation.x = THREE.MathUtils.damp(
-          avatarHead.rotation.x,
-          headPose.x + (expression === 'surprised' ? -0.1 : 0),
-          5,
-          delta,
-        );
-      }
-      if (avatarChest && chestPose) {
-        avatarChest.rotation.x = THREE.MathUtils.damp(
-          avatarChest.rotation.x,
-          chestPose.x + brakePulse * 0.08 - (scenario === 'speeding' ? 0.025 : 0),
-          8,
-          delta,
-        );
-      }
-    }
   }
+  updateAvatarBelt?.();
   controls.update();
   renderer.render(scene, camera);
 }

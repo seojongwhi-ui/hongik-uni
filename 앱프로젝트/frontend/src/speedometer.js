@@ -35,11 +35,12 @@ export function setupSpeedometer({ onNeedsAttention = () => {}, onSpeedChange = 
   let previous = null;
   let lastFixAt = 0;
   let active = false;
+  let simulated = false;
   const unavailable = !window.isSecureContext ? 'HTTPS 연결 필요' : !navigator.geolocation ? '위치 미지원' : null;
 
   function setStatus(message) {
     status.textContent = message;
-    meter.dataset.state = active ? 'active' : 'off';
+    meter.dataset.state = simulated ? 'simulation' : active ? 'active' : 'off';
   }
 
   function stop(message = '일시 중지') {
@@ -56,7 +57,7 @@ export function setupSpeedometer({ onNeedsAttention = () => {}, onSpeedChange = 
   }
 
   function onPosition(position) {
-    if (!active) return;
+    if (!active || simulated) return;
     lastFixAt = Date.now();
     const reading = speedFromPosition(position, previous);
     if (!previous || position.timestamp - previous.timestamp >= 2000) previous = position;
@@ -108,7 +109,23 @@ export function setupSpeedometer({ onNeedsAttention = () => {}, onSpeedChange = 
     }
   }
 
+  function setSimulatedSpeed(speed, message = '주행 시뮬레이션') {
+    simulated = true;
+    const displayedSpeed = Math.max(0, Math.round(speed));
+    value.textContent = String(displayedSpeed);
+    setStatus(message);
+    onSpeedChange(displayedSpeed);
+  }
+
+  function clearSimulatedSpeed() {
+    if (!simulated) return;
+    simulated = false;
+    value.textContent = '--';
+    setStatus(active ? 'GPS 신호 대기' : unavailable ?? '시작 전');
+    onSpeedChange(null);
+  }
+
   setStatus(unavailable ?? '시작 전');
 
-  return { start, stop };
+  return { start, stop, setSimulatedSpeed, clearSimulatedSpeed };
 }

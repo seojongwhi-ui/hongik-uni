@@ -52,6 +52,7 @@ try {
     await page.goto(previewUrl, { waitUntil: 'domcontentloaded' });
     await page.getByRole('button', { name: '나중에' }).click();
     await page.locator('canvas').waitFor();
+    await page.locator('#passenger-pane[data-model="ready"]').waitFor();
     assert.equal(await page.locator('#driver-pane, #driver-video, #camera-toggle').count(), 0, `${name}: camera UI still exists`);
     await page.waitForTimeout(800);
 
@@ -93,6 +94,19 @@ try {
 
   const speechPage = await newPage({ viewport: { width: 1440, height: 900 } });
   await speechPage.addInitScript(() => {
+    window.SpeechSynthesisUtterance = class {
+      constructor(text) { this.text = text; }
+    };
+    Object.defineProperty(window, 'speechSynthesis', {
+      configurable: true,
+      value: {
+        speak(utterance) {
+          window.mockGreeting = utterance;
+          utterance.onstart?.();
+        },
+        cancel() {},
+      },
+    });
     class MockSpeechRecognition {
       constructor() { window.mockSpeechRecognition = this; }
       start() { this.onstart?.(); }
@@ -115,6 +129,10 @@ try {
   await speechPage.getByRole('button', { name: '기능 시작' }).click();
   await speechPage.locator('#session-consent[open]').waitFor();
   await speechPage.getByRole('button', { name: '동의하고 시작' }).click();
+  assert.equal(await speechPage.evaluate(() => window.mockGreeting.text), '안녕, 오늘도 같이 가자.');
+  assert.equal(await speechPage.locator('#passenger-state-text').textContent(), '안녕, 오늘도 같이 가자.');
+  assert.equal(await speechPage.locator('#speech-state').textContent(), '시작 전');
+  await speechPage.evaluate(() => window.mockGreeting.onend());
   assert.equal(await speechPage.locator('#speech-state').textContent(), '듣는 중');
   assert.equal(await speechPage.locator('#speed-state').textContent(), 'GPS 연결 중');
   assert.equal(await speechPage.locator('#session-start').isHidden(), true);
@@ -128,18 +146,30 @@ try {
   await speechPage.waitForTimeout(1250);
   assert.equal(await speechPage.locator('#passenger-pane').getAttribute('data-motion'), 'stationary');
 
+  await speechPage.getByRole('button', { name: '자동 주행' }).click();
+  assert.equal(await speechPage.getByRole('button', { name: '주행 중지' }).getAttribute('aria-pressed'), 'true');
+  await speechPage.waitForFunction(() => document.getElementById('passenger-state-text').textContent === '출발 및 도심 진입');
+  assert.equal(await speechPage.locator('#speed-value').textContent(), '24');
+  assert.equal(await speechPage.locator('#simulation-banner').isVisible(), true);
+  await speechPage.getByRole('button', { name: '주행 중지' }).click();
+  assert.equal(await speechPage.getByRole('button', { name: '자동 주행' }).getAttribute('aria-pressed'), 'false');
+  assert.equal(await speechPage.locator('#simulation-banner').isHidden(), true);
+
   await speechPage.evaluate(() => window.mockSpeechRecognition.emit('아 정말 짜증 나'));
   assert.equal(await speechPage.locator('#passenger-pane').getAttribute('data-expression'), 'concerned');
   const concernedPath = join(tmpdir(), 'passenger-concerned.png');
+  await speechPage.waitForTimeout(400);
   await speechPage.screenshot({ path: concernedPath });
 
   await speechPage.evaluate(() => window.mockSpeechRecognition.emit('고마워'));
   assert.equal(await speechPage.locator('#passenger-pane').getAttribute('data-expression'), 'warm');
   const warmPath = join(tmpdir(), 'passenger-warm.png');
+  await speechPage.waitForTimeout(400);
   await speechPage.screenshot({ path: warmPath });
 
   await speechPage.evaluate(() => window.mockSpeechRecognition.emit('아 깜짝이야!'));
   assert.equal(await speechPage.locator('#passenger-pane').getAttribute('data-expression'), 'surprised');
+  assert.equal(await speechPage.locator('#danger-flash').getAttribute('class'), 'danger-flash is-active');
   await speechPage.waitForTimeout(400);
   const surprisedPath = join(tmpdir(), 'passenger-surprised.png');
   await speechPage.screenshot({ path: surprisedPath });
@@ -158,12 +188,13 @@ try {
   assert.equal(await speechPage.locator('#passenger-pane').getAttribute('data-expression'), 'surprised');
   assert.equal(await speechPage.locator('#passenger-pane').getAttribute('data-scenario'), 'braking');
   assert.equal(await speechPage.locator('#passenger-state-text').textContent(), '급정거 시뮬레이션');
+  assert.equal(await speechPage.locator('#danger-flash').getAttribute('class'), 'danger-flash is-active');
   await speechPage.evaluate(() => window.mockSpeechRecognition.emit('고마워'));
   assert.equal(await speechPage.locator('#passenger-pane').getAttribute('data-expression'), 'surprised');
   await speechPage.waitForTimeout(350);
   const brakingPath = join(tmpdir(), 'passenger-simulated-braking.png');
   await speechPage.screenshot({ path: brakingPath });
-  await speechPage.waitForTimeout(4600);
+  await speechPage.waitForFunction(() => document.getElementById('passenger-pane').dataset.scenario === 'none', null, { timeout: 10000 });
   assert.equal(await speechPage.locator('#passenger-pane').getAttribute('data-scenario'), 'none');
   assert.equal(await speechPage.locator('#passenger-pane').getAttribute('data-expression'), 'neutral');
   await speechPage.evaluate(() => window.mockSpeechRecognition.onerror?.({ error: 'not-allowed' }));
@@ -252,7 +283,7 @@ try {
           });
         }, 1000);
       });
-      await speedPage.waitForTimeout(4600);
+      await speedPage.waitForFunction(() => document.getElementById('passenger-pane').dataset.scenario === 'none', null, { timeout: 10000 });
       assert.equal(await speedPage.locator('#passenger-pane').getAttribute('data-scenario'), 'none');
       assert.equal(await speedPage.locator('#passenger-pane').getAttribute('data-expression'), 'concerned');
       await speedPage.evaluate(() => clearInterval(window.keepSpeed));

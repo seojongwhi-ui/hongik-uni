@@ -35,13 +35,22 @@
       <div class="stage">
         <section id="passenger-pane" class="passenger-pane pane" data-expression="neutral" data-speech="off" data-scenario="none" data-speeding="false" data-motion="unknown" aria-label="가상 동승자 화면">
           <div id="scene" class="scene" aria-label="차량 조수석에 앉은 3D 가상 동승자"></div>
+          <div id="danger-flash" class="danger-flash" aria-hidden="true"></div>
           <div class="pane-top passenger-top">
             <h2>가상 동승자</h2>
             <span class="pane-state"><span class="state-dot"></span><span id="passenger-state-text">대기 중</span></span>
           </div>
+          <div id="simulation-banner" class="simulation-banner" hidden aria-live="polite">
+            <span id="simulation-event">출발 준비</span>
+            <span id="simulation-step">1 / 9</span>
+            <span class="simulation-progress" aria-hidden="true"><span id="simulation-progress-value"></span></span>
+          </div>
           <div class="pane-bottom passenger-bottom">
             <span id="speech-state" role="status">시작 전</span>
             <div class="scenario-controls" role="group" aria-label="상황 시뮬레이션">
+              <button id="simulate-drive" class="scenario-button scenario-button-primary" type="button" aria-pressed="false" title="자동 주행 시뮬레이션">
+                <i data-lucide="route" aria-hidden="true"></i><span id="simulate-drive-text">자동 주행</span>
+              </button>
               <button id="simulate-departure" class="scenario-button" type="button" aria-label="출발" title="출발 상황 시뮬레이션">
                 <i data-lucide="car-front" aria-hidden="true"></i><span>출발</span>
               </button>

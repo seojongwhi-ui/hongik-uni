@@ -28,6 +28,7 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .speed-meta { display: grid; gap: 1px; max-width: 82px; color: #5d6d61; font-size: 10px; font-weight: 600; line-height: 1.2; }
 .speed-meta span:first-child { color: #243832; font-weight: 700; }
 .speedometer[data-state='active'] .speed-meta span:first-child { color: #28755b; }
+.speedometer[data-state='simulation'] .speed-meta span:first-child { color: #a55a31; }
 .session-start { justify-self: end; display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 40px; padding: 8px 12px; border: 1px solid #b9c9bd; border-radius: 6px; background: #f7faf7; color: #263f33; font: inherit; font-size: 11px; font-weight: 700; cursor: pointer; white-space: nowrap; }
 .session-start[hidden] { display: none; }
 .session-start:hover { background: #f9fcf8; }
@@ -45,20 +46,39 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .state-dot { width: 7px; height: 7px; flex: 0 0 7px; border-radius: 50%; background: #a9b8ad; }
 .passenger-pane { background: #121917; }
 .scene, .scene canvas { width: 100%; height: 100%; display: block; }
+.danger-flash { position: absolute; z-index: 1; inset: 0; pointer-events: none; opacity: 0; background: rgba(195, 28, 36, 0.2); border: 10px solid rgba(226, 52, 57, 0.78); }
+.danger-flash.is-active { animation: danger-pulse 1.2s ease-out both; }
+@keyframes danger-pulse {
+  0%, 100% { opacity: 0; }
+  12% { opacity: 0.9; }
+  32% { opacity: 0.08; }
+  52% { opacity: 0.72; }
+  78% { opacity: 0.12; }
+}
 .passenger-top { color: #edf3ef; background: rgba(18, 27, 24, 0.88); border-bottom: 1px solid rgba(181, 198, 188, 0.22); }
 .passenger-top .state-dot { background: #72b496; }
 .passenger-bottom { color: #c8d4cc; background: rgba(18, 27, 24, 0.9); border-top: 1px solid rgba(181, 198, 188, 0.22); font-size: 11px; font-weight: 600; }
+.simulation-banner { position: absolute; z-index: 3; top: 66px; left: 50%; display: grid; grid-template-columns: 1fr auto; gap: 5px 18px; width: min(420px, calc(100% - 44px)); padding: 9px 12px 8px; color: #edf3ef; background: rgba(18, 27, 24, 0.88); border: 1px solid rgba(181, 198, 188, 0.35); border-radius: 6px; transform: translateX(-50%); font-size: 11px; font-weight: 700; }
+.simulation-banner[hidden] { display: none; }
+#simulation-step { color: #9eb4a7; font-variant-numeric: tabular-nums; }
+.simulation-progress { grid-column: 1 / -1; height: 2px; overflow: hidden; background: rgba(217, 230, 221, 0.2); }
+.simulation-progress span { display: block; width: 0; height: 100%; background: #80c2a1; }
 #speech-state { max-width: 110px; line-height: 1.25; }
 .scenario-controls { display: flex; gap: 8px; }
 .scenario-button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; width: 104px; min-height: 44px; padding: 8px 11px; border: 1px solid #b9cbbf; border-radius: 6px; background: #f2f6f2; color: #2c4638; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; white-space: nowrap; }
 .scenario-button:hover { background: #ffffff; }
 .scenario-button:focus-visible { outline: 2px solid #3c8c63; outline-offset: 2px; }
 .scenario-button svg { width: 16px; height: 16px; stroke-width: 2; }
+.scenario-button-primary { border-color: #719982; background: #e3eee7; color: #244d3a; }
+.passenger-pane[data-auto-simulation='true'] #simulate-drive { border-color: #d08352; background: #fff0e4; color: #7b4425; }
 .passenger-pane[data-scenario='speeding'] #simulate-speeding { border-color: #c7824f; background: #fff1e7; color: #8a4a23; }
 .passenger-pane[data-scenario='braking'] #simulate-braking { border-color: #c2685c; background: #ffefea; color: #883c35; }
 .passenger-pane[data-motion='departure'] #simulate-departure { border-color: #6e9d86; background: #e3f2e9; color: #285f48; }
 .passenger-pane[data-scenario='speeding'] .passenger-top .state-dot { background: #c7824f; }
 .passenger-pane[data-scenario='braking'] .passenger-top .state-dot { background: #c2685c; }
+.passenger-pane[data-scenario='profanity'] .passenger-top .state-dot,
+.passenger-pane[data-scenario='distraction'] .passenger-top .state-dot,
+.passenger-pane[data-scenario='swerving'] .passenger-top .state-dot { background: #d17f60; }
 
 .passenger-pane[data-speech='active'][data-scenario='none'] .passenger-top .state-dot { background: #d17f60; }
 .passenger-pane[data-speeding='true'][data-scenario='none'] .passenger-top .state-dot { background: #c7824f; }
@@ -91,9 +111,10 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
   .pane-top, .pane-bottom { padding: 11px max(16px, env(safe-area-inset-right)) 11px max(16px, env(safe-area-inset-left)); }
   .pane h2 { font-size: 12px; }
   .pane-state, .passenger-bottom { font-size: 10px; }
-  .scenario-button { width: 72px; min-height: 42px; padding: 6px 7px; font-size: 11px; }
+  .scenario-button { width: 58px; min-height: 42px; padding: 6px 5px; font-size: 10px; }
   .scenario-button svg { width: 14px; height: 14px; }
   #speech-state { max-width: 90px; }
+  .simulation-banner { top: 58px; width: calc(100% - 32px); }
 }
 
 @media (max-width: 360px) {
@@ -102,10 +123,10 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
   .brand h1 { font-size: 12px; white-space: nowrap; }
   .speedometer { gap: 3px; }
   .speed-meta { font-size: 8px; }
-  .scenario-controls { gap: 5px; }
-  .scenario-button { width: 44px; gap: 0; padding: 6px; }
+  .scenario-controls { gap: 3px; }
+  .scenario-button { width: 40px; gap: 0; padding: 5px; }
   .scenario-button span { display: none; }
-  #speech-state { max-width: 64px; }
+  #speech-state { max-width: 48px; }
 }
 
 @media (max-width: 300px) {
@@ -118,4 +139,12 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
   #speed-value { font-size: 25px; }
   .pane-top, .pane-bottom { padding: 8px max(16px, env(safe-area-inset-right)) 8px max(16px, env(safe-area-inset-left)); }
   .scenario-button { width: 92px; min-height: 38px; padding: 6px 9px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .danger-flash.is-active { animation: danger-steady 800ms ease-out both; }
+  @keyframes danger-steady {
+    0%, 100% { opacity: 0; }
+    15%, 70% { opacity: 0.55; }
+  }
 }
